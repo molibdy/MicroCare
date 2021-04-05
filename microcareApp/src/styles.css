@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Colores de fondo */
+
+.backgroundBlue{
+    background-color: #5ce1e6;
+}
+
+.backgroundDark{
+    background-color: #667a92;
+}
+
+.backgroundLight{
+    background-color: #F8FBFB;
+}
+
+.backgroundGray{
+    background-color: #B2C1C6;
+}
+
+
+/* Colores de fondo micronutrientes */
+
+.backgroundGreen{
+    background-color: #DEFF88;
+}
+
+.backgroundOrange{
+    background-color: #FFD38C;
+}
+
+.backgroundCoral{
+    background-color: #FF96A3;
+}
+
+.backgroundPurple{
+    background-color: #A18CE8;
+}
+
+
+
+/* Colores de letra */
+
+.colorBlue{
+    color: #5ce1e6;
+}
+
+.colorDark{
+    color: #667a92;
+}
+
+.colorLight{
+    color: #F8FBFB;
+}
+
+.colorGray{
+    color: #B2C1C6;
+}
+
+
+/* Colores de letra micronutrientes */
+
+.colorGreen{
+    color: #DEFF88;
+}
+
+.colorOrange{
+    color: #FFD38C;
+}
+
+.colorCoral{
+    color: #FF96A3;
+}
+
+.colorPurple{
+    color: #A18CE8;
+}
+
+
+
+
