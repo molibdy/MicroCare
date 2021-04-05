@@ -8,6 +8,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { BurgerMenuComponent } from './pages/burger-menu/burger-menu.component';
 import { CalendarioComponent } from './pages/calendario/calendario.component';
+import { MaterialModule } from './material.module';
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { CalendarioComponent } from './pages/calendario/calendario.component';
     NavBarComponent,
     BurgerMenuComponent,
     CalendarioComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
