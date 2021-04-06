@@ -12,6 +12,8 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { SearchingformComponent } from './pages/searchingform/searchingform.component';
+import { IntroComponent } from './pages/intro/intro.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     NavBarComponent,
     BurgerMenuComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    SearchingformComponent,
+    IntroComponent
     
   ],
   imports: [
@@ -29,7 +33,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     FormsModule
   ],
   providers: [],

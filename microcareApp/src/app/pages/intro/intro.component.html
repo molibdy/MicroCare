@@ -1,17 +1,13 @@
-<div class=" contenedor">
-    <div class="row-right">
-        <div class="circle" (click)='perderfoco()'>X</div>
-    </div>
-</div>
+
 
 <div class="col-center">
 
     <div class="col-center 100 iphoneCard">
         <div class=" row-left widthMenu marginLeft32">
  
-            <div class="imageProfile" style="margin-right: 2px;"> <img [src]=imageProfile alt="fran"> </div>
             <div>
-                <div class="row-left text">Fran Martinez</div>
+                <img [src]="imageProfile" alt="" srcset="">
+                <div class="row-left text">El gestor de Micronutrientes </div>
                 <div class="row-left textSubtitle">perfil completado al 70%</div>
             </div>
         </div>
@@ -19,38 +15,21 @@
 
 
        
-            <div class=" col-center text menu-item"style="border-radius: 20px 20px 0px 0px; background-color: rgba(178, 193, 198, 0.185);;">
-                <div class="row-left widthMenu">
-                    
-                    
-                        <div class="buscarNavbar relative">
-                            <mat-icon class="absolute marginLeft32 iconSize colorBlue" svgIcon="search"></mat-icon>
-                            <input  [(ngModel)]='inputText' class="text fontAwesome marginLeft32 " placeholder="buscar" (focus)="onFocusEvent($event)" (blur)='perderfoco()'>
-                        </div>
-        
 
-                </div>
-                <div class=" col-center  custom-hr" style="bottom: 0px; "></div>
-            </div>
 
 <!--             ///////////// barra buscar oculta
  -->       
-                <div class=" col-center text  busqueda padding"  *ngIf='inputText.length >=1' >
-                    
-                    <div class="col-center  menu-item-busqueda" *ngFor="let busqueda of coincidencia" >
-                        <div class=" col-center text  menu-item " > {{busqueda}}</div> 
-                        <div class=" col-center  custom-hr"></div>       
-                    </div>
+               
 
  <!--             ///////////// barra menu Burger
  -->                             
                 </div>
-                <div class="busqueda col-center" *ngIf='inputText.length == 0'>
+                <div class="busqueda col-center">
                     <div class=" col-center text  menu-item colorWhite" >
                         <div class="row-left widthMenu" >
                             
                                         <div class="marginLeft32"> 
-                                            <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
+                                            
                                         </div>
                                         <div class="separadorMenu"></div>
                                         <div>Retos</div>
@@ -62,7 +41,6 @@
                     <div class="row-left widthMenu" >
                         
                                     <div class="marginLeft32"> 
-                                        <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
                                     </div>
                                     <div class="separadorMenu"></div>
                                     <div>Recetas</div>
@@ -73,7 +51,6 @@
                     <div class="row-left widthMenu" >
                         
                                     <div class="marginLeft32"> 
-                                        <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
                                     </div>
                                     <div class="separadorMenu"></div>
                                     <div>Configuracion</div>
@@ -83,6 +60,8 @@
                 <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
                 </div>
         </div>
+        <div class="row-center">
+        <div class="col-center  menu-item colorWhite" id="botonRojo">hey</div>
 
-</div>
-<app-nav-bar></app-nav-bar>
+        <button class="col-center menu-item \" id="botonVerde">hey</button>
+    </div>

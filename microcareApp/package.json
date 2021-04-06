@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~11.2.6",
     "@angular/platform-browser-dynamic": "~11.2.6",
     "@angular/router": "~11.2.6",
+    "@fortawesome/angular-fontawesome": "^0.8.2",
     "@pxblue/icons-svg": "^1.2.0",
     "@schematics/angular": "^11.2.7",
     "angular-calendar": "^0.28.22",
