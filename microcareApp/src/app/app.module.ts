@@ -12,6 +12,11 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
+import { BuscadorRecetasComponent } from './pages/buscador-recetas/buscador-recetas.component';
+import { FichaGrupoComponent } from './pages/ficha-grupo/ficha-grupo.component';
+import { FichaMicroComponent } from './pages/ficha-micro/ficha-micro.component';
+import { PreferenciasComponent } from './pages/preferencias/preferencias.component';
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     NavBarComponent,
     BurgerMenuComponent,
-    CalendarioComponent
+    CalendarioComponent,
+    ConfiguracionComponent,
+    BuscadorRecetasComponent,
+    FichaGrupoComponent,
+    FichaMicroComponent,
+    PreferenciasComponent
     
   ],
   imports: [
@@ -29,8 +39,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    BrowserAnimationsModule
-    FormsModule
+    BrowserAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
