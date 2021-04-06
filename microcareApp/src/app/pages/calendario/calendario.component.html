@@ -1,0 +1,121 @@
+<div class=" contenedor">
+    <div class="row-right">
+        <div class="circle">X</div>
+    </div>
+</div>
+
+
+<div class="col-center 100 iphoneCard">
+       
+    <div class="col-center menu-item-top">
+        <div class="row-center">
+                <div class="title">
+                    {{fecha}} 
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Recetas del día -->
+
+<div id="recetas" class="col-center">
+    <div class="iphoneCard">
+       
+        <div class="col-center menu-item-top">
+            <div class="row-left">
+                    <div class="title">
+                        Planning
+                    </div>
+            </div>
+        </div>
+    
+        <div class="col-center menu-item" *ngFor="let receta of plannedRecipes">
+            <div class="row-left row-item">
+                <div class="check" (click)="addRegister(receta.id)">
+                    
+                </div>
+                <div class="text">
+                    {{receta}}
+                </div>
+            </div>
+        </div>
+       
+    
+    
+    <div class="col-center menu-item-bottom">
+        <div class="row-center ">
+                <button class="button-blue">
+                    Añadir receta
+                </button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Retos del día -->
+
+<div id="retos" class="col-center">
+    <div class="iphoneCard">
+        <div class="col-center menu-item-top">
+            <div class="row-left">
+                    <div class="title">
+                        Retos
+                    </div>
+            </div>
+        </div>
+    
+        <div class="col-center menu-item" *ngFor="let reto of retos">
+            <div class="row-left row-item">
+                <div class="check" (click)="addRegister(reto.id)">
+                    
+                </div>
+                <div class="text">
+                    {{reto}}
+                </div>
+            </div>
+        </div>
+       
+    
+    </div>
+  
+    
+</div>
+
+
+
+
+
+
+    <!-- <div class="col-center 100 iphoneCard">
+       
+            <div class="col-center menu-item-top">
+                <div class="row-center">
+                        <div class="text">
+                            Día 1
+                        </div>
+                </div>
+                <div class="custom-hr"></div>
+            </div>
+
+            <div class="col-center menu-item">
+                <div class="row-center">
+                        <div class="text">
+                            Día 2
+                        </div>
+                </div>
+                <div class="custom-hr"></div>
+            </div>
+           
+            <div class="col-center menu-item-bottom">
+                <div class="row-center">
+                        <div class="text">
+                            Día 3
+                        </div>
+                </div>
+                <div class="custom-hr"></div>
+            </div>
+            
+    </div> -->
