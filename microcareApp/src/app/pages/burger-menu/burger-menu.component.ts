@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./burger-menu.component.css']
 })
 export class BurgerMenuComponent implements OnInit {
+  public busqueda:string = ""
 
-  constructor() { }
-
+  constructor() {
+   }
   ngOnInit(): void {
+    console.log(this.busqueda);
+    
   }
 
 }

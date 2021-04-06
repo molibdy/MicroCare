@@ -15,6 +15,11 @@ export class AppComponent {
   {
 /*     this.matIconRegistry.addSvgIcon("home",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/headphone.svg")); */
     this.matIconRegistry.addSvgIcon("grafica",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/spreadsheet-app.svg"));
+    this.matIconRegistry.addSvgIcon("boton-anadir",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/boton-Anadir-Ingesta.svg"));
+    this.matIconRegistry.addSvgIcon("calendario",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/calendar.svg"));
+
+
   }
+  
   title = 'microcareApp';
 }

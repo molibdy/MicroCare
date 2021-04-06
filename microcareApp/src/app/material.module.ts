@@ -3,7 +3,7 @@
  // but the important ones are…
  import { NgModule } from "@angular/core";
 import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 const materialModules = [
   MatIconModule
 ];
@@ -18,6 +18,7 @@ const materialModules = [
    exports: [
      // Other material exports removed for brevity,
      materialModules,
+     MatAutocompleteModule
      
    ],
    entryComponents: [],
