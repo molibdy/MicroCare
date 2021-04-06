@@ -10,6 +10,7 @@ import { BurgerMenuComponent } from './pages/burger-menu/burger-menu.component';
 import { CalendarioComponent } from './pages/calendario/calendario.component';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

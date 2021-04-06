@@ -1,22 +1,11 @@
-.container
-{
-    display: flex;
-}
-.row
-{
-    flex: auto;
-}
-.col
-{
-    flex: auto;
-}
+
 
 .navBar
 {
     margin: 0%;
     width: 100%;
     height: 65px;
-    background-color: rgb(201, 179, 179);
+    background-color: rgb(255, 255, 255);
     border-radius: 30px 30px 0px 0px;
     position: absolute bottom 0;
 
@@ -25,6 +14,7 @@
 {
     color: #667A92;
     font-size: 10px;
+    margin-bottom: 9px;
 }
 .material-icons.md-48 { font-size: 48px; }
 
@@ -42,62 +32,32 @@
     border-radius: 28px;
     background-color: violet;
 }
-
-.col-center{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-self: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
+#iconoNavBar
+{
+    height: 42px;
+    
+}
+.anadirNavbar
+{
+    height: 156px;
+    overflow: visible;
+    margin-bottom: 15px;
+}
+.base
+{
+    align-items: baseline;
+}
+.abajo
+{
+    position: fixed;
+    bottom: 0;
+}
+.circle
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 0;
 }
 
-.col-right{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-self: right;
-    align-items: right;
-    justify-items: right;
-    justify-content: right;
-}
-
-.col-left{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-self: left;
-    align-items: left;
-    justify-items: left;
-    justify-content: left;
-}
-.row-center{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-self: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-
-.row-right{
-    display: flex;
-    flex-direction: row;
-    text-align: right;
-    align-self: right;
-    align-items: right;
-    justify-items: right;
-    justify-content: right;
-}
-
-.row-left{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    align-self: left;
-    align-items: left;
-    justify-items: left;
-    justify-content: left;
-}
