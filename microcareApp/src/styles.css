@@ -145,6 +145,9 @@ body{
 .container
 {
     display: flex;
+    flex-direction: column;
+    width:340px;
+
 }
 .row
 {
@@ -192,7 +195,7 @@ body{
     align-self: right;
     align-items: right;
     justify-items: right;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .row-left{
