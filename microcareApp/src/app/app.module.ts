@@ -12,8 +12,15 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { SearchingformComponent } from './pages/searchingform/searchingform.component';
 import { IntroComponent } from './pages/intro/intro.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NgApexchartsModule } from "ng-apexcharts";
+import { VitaminChartComponent } from './pages/vitamin-chart/vitamin-chart.component';
+import { MineralChartComponent } from './pages/mineral-chart/mineral-chart.component';
+import { AminoacidChartComponent } from './pages/aminoacid-chart/aminoacid-chart.component';
+import { OmegasChartComponent } from './pages/omegas-chart/omegas-chart.component';
+import { GraficaOthersComponent } from './pages/grafica-others/grafica-others.component';
+import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronutrient-chart.component';
 
 
 @NgModule({
@@ -24,8 +31,14 @@ import { IntroComponent } from './pages/intro/intro.component';
     NavBarComponent,
     BurgerMenuComponent,
     CalendarioComponent,
-    SearchingformComponent,
-    IntroComponent
+    IntroComponent,
+    HomeComponent,
+    VitaminChartComponent,
+    MineralChartComponent,
+    AminoacidChartComponent,
+    OmegasChartComponent,
+    GraficaOthersComponent,
+    MicronutrientChartComponent
     
   ],
   imports: [
@@ -34,7 +47,8 @@ import { IntroComponent } from './pages/intro/intro.component';
     MaterialModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

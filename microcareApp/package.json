@@ -25,7 +25,9 @@
     "@pxblue/icons-svg": "^1.2.0",
     "@schematics/angular": "^11.2.7",
     "angular-calendar": "^0.28.22",
+    "apexcharts": "^3.26.0",
     "date-fns": "^2.19.0",
+    "ng-apexcharts": "^1.5.9",
     "rxjs": "^6.6.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
