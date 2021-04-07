@@ -14,6 +14,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { SearchingformComponent } from './pages/searchingform/searchingform.component';
 import { IntroComponent } from './pages/intro/intro.component';
+import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
+import { BuscadorRecetasComponent } from './pages/buscador-recetas/buscador-recetas.component';
+import { FichaGrupoComponent } from './pages/ficha-grupo/ficha-grupo.component';
+import { FichaMicroComponent } from './pages/ficha-micro/ficha-micro.component';
+import { PreferenciasComponent } from './pages/preferencias/preferencias.component';
 
 
 @NgModule({
@@ -25,7 +30,12 @@ import { IntroComponent } from './pages/intro/intro.component';
     BurgerMenuComponent,
     CalendarioComponent,
     SearchingformComponent,
-    IntroComponent
+    IntroComponent,
+    ConfiguracionComponent,
+    BuscadorRecetasComponent,
+    FichaGrupoComponent,
+    FichaMicroComponent,
+    PreferenciasComponent
     
   ],
   imports: [

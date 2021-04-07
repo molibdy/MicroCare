@@ -1,24 +1,9 @@
-.text{
-  font-size: 16px;
-  color: #667a92;
-  text-align: center;
-}
-
-.forget{
-  font-size: 12px;
-  margin-top: 16px;
-  color: #667a92;
-  text-decoration: underline;
-  text-align: right;
-}
-
-
 input{
-  border:none;
-  font-size: 16px;
-  color:#667a92;
+    border:none;
+    font-size: 16px;
+    color:#667a92;
 }
-
+  
 .input{
 width: 340px;
 border: 30px;
