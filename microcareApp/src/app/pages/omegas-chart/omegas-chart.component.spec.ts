@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchingformComponent } from './searchingform.component';
+import { OmegasChartComponent } from './omegas-chart.component';
 
-describe('SearchingformComponent', () => {
-  let component: SearchingformComponent;
-  let fixture: ComponentFixture<SearchingformComponent>;
+describe('OmegasChartComponent', () => {
+  let component: OmegasChartComponent;
+  let fixture: ComponentFixture<OmegasChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchingformComponent ]
+      declarations: [ OmegasChartComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchingformComponent);
+    fixture = TestBed.createComponent(OmegasChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

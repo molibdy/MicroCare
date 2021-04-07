@@ -7,14 +7,25 @@
     height: 65px;
     background-color: rgb(255, 255, 255);
     border-radius: 30px 30px 0px 0px;
-    position: absolute bottom 0;
-
+    /* position: absolute; 
+    bottom: 0; */
+    position: fixed;
+    bottom: 0;
+   
 }
+
+.fijoAbajo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .icons 
 {
     color: #667A92;
-    font-size: 10px;
+    /* font-size: 10px; */
     margin-bottom: 9px;
+    cursor: pointer;
 }
 .material-icons.md-48 { font-size: 48px; }
 
@@ -32,31 +43,52 @@
     border-radius: 28px;
     background-color: violet;
 }
-#iconoNavBar
+.iconoNavBar
 {
     height: 42px;
-    
+    padding-top: 15px;
 }
+
 .anadirNavbar
 {
     height: 156px;
     overflow: visible;
     margin-bottom: 15px;
+    cursor: pointer;
 }
-.base
-{
-    align-items: baseline;
-}
-.abajo
-{
-    position: fixed;
-    bottom: 0;
-}
+
+
 .circle
 {
     height: 120px;
     width: 120px;
     border-radius: 50%;
     background-color: white;
-    margin-bottom: 0;
+    align-self: center;
+    overflow: visible;
+    margin-bottom: 15px;
 }
+
+
+.row-center-nav{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    /* align-self: center; */
+    align-items: center;    /* alinea elementos horizontalmente en el centro de la fila */
+    /* justify-items: center; */
+    justify-content: center;   /* alinea elementos verticalmente en el centro */
+}
+
+.row-spaced-nav{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    /* align-self: center; */
+    align-items: center;    /* alinea elementos horizontalmente en el centro de la fila */
+    /* justify-items: center; */
+    justify-content: space-evenly;   /* alinea elementos verticalmente en el centro */
+}
+
+

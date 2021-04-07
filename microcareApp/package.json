@@ -28,6 +28,7 @@
     "apexcharts": "^3.26.0",
     "core-js": "^3.8.3",
     "date-fns": "^2.19.0",
+    "ng-apexcharts": "^1.5.9",
     "rxjs": "^6.6.7",
     "tslib": "^2.0.0",
     "zone": "^0.3.4",
