@@ -1,0 +1,197 @@
+.iphoneCard
+{
+    margin: 20px;
+    width: 340px;
+    border-radius: 30px;
+}
+.iphoneCardTitle
+{
+    margin: 20px;
+    width: 340px;
+}
+.menu-item
+{
+    width: auto;
+    height: 100px;
+  /*   border: solid 0.5px 0.5px 0 0 #B2C1C6;
+    border-bottom: solid 0.5px rgba(178, 193, 198, 0.685); */
+}
+
+.menu-desplegable{
+    width: 100px;
+    height: auto;
+}
+
+.custom-hr
+{
+    width: 300px;
+    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
+    position: relative;
+    align-self: center;
+}
+
+.menu-item:hover
+{
+    background-color: #5ce1e662;
+}
+#menuItem:hover {
+    box-shadow: 0 0 12px rgba(70,150,240,0.7) inset;
+    color: rgba(255,255,255,1);
+  }
+
+.circle{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 500;
+        background-color:white;
+        border: none;
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+}
+
+.contenedor{
+    width:100%;
+}
+ .icono{
+    margin-right: 15px;
+ }
+
+
+.text{
+    font-size: 28px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+  }
+
+  .textSubtitle
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-regular;
+    text-transform:lowercase;
+  }
+
+.buscarNavbar input
+{
+    box-sizing: border-box;
+    height: 100px;
+    width: 240px;
+    border:none;
+    font-size: 28px;
+    font-family: dosis-medium;
+    text-transform: capitalize;
+    color: hsla(213, 44%, 28%, 0.685);
+    background-color:transparent;
+   
+}
+.buscarNavbar input::placeholder
+{
+ 
+    border:none;
+    text-align: left;
+    font-size: 28px;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+    color: #667a92;
+   
+}
+.buscarNavbar input:focus
+{
+    text-align: left;
+    outline: none;
+   
+}
+.buscarNavbar input
+{
+    text-align: left;
+    outline: none;
+   
+}
+.busqueda
+{
+    height: auto;
+    margin: 0;
+    border-radius:30px;
+    width: 340px;
+/*     background-color:  rgba(178, 193, 198, 0.185);;
+ */ overflow-x: hidden;
+    overflow-y:auto;
+    
+}
+.busqueda::-webkit-scrollbar
+{
+    width: 0;
+}
+#gris
+{
+    background-color: yellow;
+}
+.menu-item-busqueda
+{
+    width: 100%;
+    text-align: center;
+    background-color:  rgba(178, 193, 198, 0.185);
+}
+.separadorMenu
+{
+    width: 30px;
+    margin-left: 20px;
+}
+.marginLeft32
+{
+    margin-left: 32px;
+    
+}
+.row-left{
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: flex-start;
+    justify-items: left;
+}
+
+.widthMenu
+{
+    width: 100%;
+}
+
+.iconSize
+{
+    height: 32px;
+    width: 32px;
+    margin-left: 100px;
+}
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+.relative
+{
+    position: relative;
+}
+.absolut
+{
+    position: absolute;
+    
+}
+.imageProfile img
+{
+    width: 60px;
+   border: solid 8px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.flecha{
+    /* transform: rotate(90deg); */
+    margin-left: 5px;
+    margin-right: 4px;
+}

@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ficha-micro.component.css']
 })
 export class FichaMicroComponent implements OnInit {
-
-  constructor() { }
+  public grupos:string[]
+  public micronutrientes: string[]
+  
+    constructor() {
+  
+    this.grupos=["nombreGrupo","micronutrientes","color", "propiedades", "score"]
+    this.micronutrientes=["Platano", "Huevo", "Nueces", "Manzana", "Pimiento"]
+  
+  }
 
   ngOnInit(): void {
   }

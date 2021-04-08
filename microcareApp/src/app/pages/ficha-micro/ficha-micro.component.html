@@ -1,1 +1,97 @@
-<div class="input"></div>gi 
+<div class="row-right">
+    <div class="circle-burger"> <mat-icon class="colorDark left-padding burger" true svgIcon="burger"></mat-icon>
+    </div>
+</div>
+<br>
+
+<div class="tarjeta">
+    <div class="row-right ancho100">
+        <div class="circle"> <mat-icon class="colorDark left-padding" true svgIcon="close"></mat-icon>
+        </div>
+    </div>
+
+    <div class="row-center ancho100">
+        <div class="circlePic"></div>        
+    </div>
+
+    <br>
+
+    <div class="row-center ancho100">
+        <div class="text">{{grupos[0]}}
+        </div>
+    </div>
+
+    <br>
+    <div class="sub-titulo">
+        Ingredientes ricos en {{grupos[0]}}
+    </div>
+    <div class="row-left wrap ancho100 chip-container">
+        <div *ngFor="let micro of micronutrientes"> 
+            <div class="chip-grande">{{micro}}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="custom-hr"></div>
+    <br>
+    <div class="wrapper">
+        <div class="item">
+            <div class="row-left"> 
+                <div class="chip1">
+                    Vegano
+                </div>
+                <div class="chip2">
+                    Vegetariano
+                </div>
+            </div>
+            <div class="foto">
+                <img src="https://carneentucasa.com/archivos/Noticias/983.jpg">
+            </div>
+            <div class="row-center">
+                <div class="row-center">
+                    <div class="nombre-receta">
+                        Cocido Madrileño
+                    </div>
+                </div>
+                <div class="row-center">
+                    <div class="chip-micro1">
+                        B
+                    </div>
+                    <div class="chip-micro2">
+                            Mo
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row-left"> 
+                <div class="chip1">
+                    Vegano
+                </div>
+                <div class="chip2">
+                    Vegetariano
+                </div>
+            </div>
+            <div class="foto">
+                <img src="https://carneentucasa.com/archivos/Noticias/983.jpg">
+            </div>
+            <div class="row-center">
+                <div class="row-center">
+                    <div class="nombre-receta">
+                        Cocido Madrileño
+                    </div>
+                </div>
+                <div class="row-center">
+                    <div class="chip-micro1">
+                        B
+                    </div>
+                    <div class="chip-micro2">
+                            Mo
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

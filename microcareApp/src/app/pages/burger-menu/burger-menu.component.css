@@ -148,6 +148,15 @@
 
  
 }
+
+.custom-hr
+{
+    width: 300px;
+    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
+    position: relative;
+    align-self: center;
+}
+
 .widthMenu
 {
     width: 100%;
