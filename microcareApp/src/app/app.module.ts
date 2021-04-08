@@ -26,6 +26,8 @@ import { AminoacidChartComponent } from './pages/aminoacid-chart/aminoacid-chart
 import { OmegasChartComponent } from './pages/omegas-chart/omegas-chart.component';
 import { GraficaOthersComponent } from './pages/grafica-others/grafica-others.component';
 import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronutrient-chart.component';
+import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
+import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronu
     AminoacidChartComponent,
     OmegasChartComponent,
     GraficaOthersComponent,
-    MicronutrientChartComponent
+    MicronutrientChartComponent,
+    VistaRecetaComponent,
+    MicroScoreComponent
     
   ],
   imports: [

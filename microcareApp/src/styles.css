@@ -264,7 +264,7 @@ body{
     /* align-self: right; */
     align-items:flex-end;   /* alinea elementos verticalmente a la derecha */
     /* justify-items:right; */
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
+    justify-content: center;  /* sitúa elementos en la parte superior de la columna */
 }
 
 .col-left{
@@ -276,6 +276,6 @@ body{
     /* justify-items: left; */
     /* justify-content: flex-end;  sitúa elementos en la parte inferior de la columna */
     
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
+    justify-content: center;  /* sitúa elementos en la parte superior de la columna */
 }
 
