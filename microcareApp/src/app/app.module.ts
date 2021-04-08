@@ -25,11 +25,9 @@ import { OmegasChartComponent } from './pages/omegas-chart/omegas-chart.componen
 import { GraficaOthersComponent } from './pages/grafica-others/grafica-others.component';
 import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronutrient-chart.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { IntroComponent } from './pages/intro/intro.component';
 import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
 import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
-
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
@@ -60,17 +58,14 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     OmegasChartComponent,
     GraficaOthersComponent,
     MicronutrientChartComponent,
-<<<<<<< HEAD
     IngestaMenuComponent,
     IntroducirManualComponent,
     
     
-=======
     BottonBurgerComponent,
     BottonCruzComponent,
     UsuarioComponent,
   
->>>>>>> rodri
   ],
   imports: [
     BrowserModule,
@@ -80,7 +75,6 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     BrowserAnimationsModule,
     FormsModule,
     NgApexchartsModule,
-    NgxUsefulSwiperModule,
     ReactiveFormsModule,
     MatAutocompleteModule
 

@@ -1,12 +1,10 @@
 
-<app-botton-cruz></app-botton-cruz>
+
 <div class="col-center">
     <div class="col-center 100 iphoneCard">
-        <app-usuario></app-usuario>
-        <br>
+    <div class="header">
         <div class="row-center text"><mat-icon class="colorBlue icono left-padding" true svgIcon="configuracion"></mat-icon>Preferencias</div>
-        <br>
-        <br>
+    </div>
        
 
  <!--             ///////////// barra menu Burger
@@ -14,7 +12,9 @@
                 
                 <div class="busqueda">
                     <!-- 1 -->
-                    <div (click)="pulsar1()" class="col-center menu-item colorWhite">
+                    <app-botton-cruz></app-botton-cruz>
+
+                    <div (click)="pulsar1()" class="col-left menu-item colorWhite">
                         <div class="text">Preferencias de Dieta <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
                     </div>
                     <div class=" custom-hr"></div>
@@ -26,32 +26,32 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div (click)="pulsar2()" class="col-center menu-item colorWhite">
-                        <div class="text">Alergias <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    <div (click)="pulsar2()" class="col-left menu-item colorWhite">
+                        <div class="text" >Alergias <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
                     </div>
                     <div class=" custom-hr"></div>
 
-                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable2">
+                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable2">
                         <div class="text colorWhite">
 
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div (click)="pulsar3()" class="col-center menu-item colorWhite">
+                    <div (click)="pulsar3()" class="col-left menu-item colorWhite">
                         <div class="text">Alimentos a evitar<mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
                     </div>
                     <div class=" custom-hr"></div>
-                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable3">
+                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable3">
                         <div class="text colorWhite">
 
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div (click)="pulsar4()" class="col-center menu-item colorWhite">
+                    <div (click)="pulsar4()" class="col-left menu-item colorWhite">
                         <div class="text">Suplementos <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
                     </div>
                     <div class=" custom-hr"></div>
-                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable4">
+                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable4">
                         <div class="text colorWhite">
                         </div>
                     </div>

@@ -7,6 +7,8 @@ import { ConfiguracionComponent } from './pages/configuracion/configuracion.comp
 import { FichaGrupoComponent } from './pages/ficha-grupo/ficha-grupo.component';
 import { FichaMicroComponent } from './pages/ficha-micro/ficha-micro.component';
 import { HomeComponent } from './pages/home/home.component';
+import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
+import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
@@ -18,10 +20,13 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'menu', component:BurgerMenuComponent},
   {path:'home/grupo', component:FichaGrupoComponent},
-  {path:'recetas', component:BuscadorRecetasComponent},
+  {path:'buscar-receta', component:BuscadorRecetasComponent},
   {path:'home/configuracion', component:ConfiguracionComponent},
   {path:'home/grupo/micro',component:FichaMicroComponent},
-  {path: 'usuario', component:UsuarioComponent}
+  {path: 'usuario', component:UsuarioComponent},
+  {path:'manual', component:IntroducirManualComponent},
+  {path:'anadir', component:IngestaMenuComponent}
+
 ];
 
 @NgModule({

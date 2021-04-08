@@ -20,3 +20,7 @@ Moli 06/04 21:00 subida del componente calendario, que contiene la vista de día
 
 Moli 07/04  21:00 subida del componente home, que contiene los cuatro componentes de tipo chart (uno por grupo de micronutrientes) y un componente de tipo gráfica.
 Además he subido el componente micronutrient-chart con instrucciones para cuando creemos el service que lo rellene con los datos del micronutriente seleccionado.
+
+
+Rodri 08/04: Subida de los componentes, botton cruz, botton burger y usuario. Actualizacion de Configuracion, fichas micro y fichas grupo. 
+Me da pete el burger menu.

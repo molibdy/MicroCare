@@ -48,6 +48,7 @@ text-transform: capitalize;
     width: 340px;
     border-radius: 30px;
     background-color: white;
+    position: relative;
 }
 
 
