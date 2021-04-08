@@ -11,9 +11,18 @@ import { CalendarioComponent } from './pages/calendario/calendario.component';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { SearchingformComponent } from './pages/searchingform/searchingform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SwiperModule } from 'swiper/angular';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import {  SwiperOptions } from 'swiper';
 import { IntroComponent } from './pages/intro/intro.component';
+import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
+import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
+
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
+
+
 
 
 @NgModule({
@@ -24,8 +33,10 @@ import { IntroComponent } from './pages/intro/intro.component';
     NavBarComponent,
     BurgerMenuComponent,
     CalendarioComponent,
-    SearchingformComponent,
-    IntroComponent
+    IntroComponent,
+    IngestaMenuComponent,
+    IntroducirManualComponent,
+    
     
   ],
   imports: [
@@ -34,7 +45,14 @@ import { IntroComponent } from './pages/intro/intro.component';
     MaterialModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    SwiperModule,
+    NgxUsefulSwiperModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule
+
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
