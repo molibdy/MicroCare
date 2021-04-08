@@ -1,0 +1,80 @@
+
+
+<div class="banner">
+    <img [src]="imgUrl" [alt]="nombre">
+</div>
+
+
+<div class="col-center 100 iphoneCard">
+    <div class="circle">X</div>
+
+    <div class="col-left menu-item">
+        <div class="row-center">
+                <div class="title">
+                    Receta name
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col-left button-item">
+        <div class="row-left">
+                <button class="mybutton-blue" (click)="addToDay()">
+                    Añadir al planning
+                </button>
+                <button class="mybutton-blue" (click)="addToDay()">
+                    Registrar ingesta
+                </button>
+        </div>
+    </div>
+
+
+    <div>
+        <app-micro-score></app-micro-score>
+    </div>
+
+    <div class="col-left menu-item">
+        <div class="row-left">
+                <div class="subtitle">
+                    Ingredientes
+                </div>
+        </div>
+    </div>
+
+    <div class="col-center menu-item" *ngFor="let ingrediente of ingredientes">
+        <div class="row-left row-item">
+            <div class="check"></div>
+            <div class="text">
+                {{ingrediente.cantidad}} {{ingrediente.unidad}} de {{ingrediente.nombre}}
+            </div>
+        </div>
+    </div>
+   
+
+    <div class=" container-pasos">
+        <div class="col-left ">
+            <div class="row-left row-item">
+                    <div class="subtitle">
+                        Pasos
+                    </div>
+            </div>
+            <div class="row-left">
+                <div class="text pasos" [innerHtml]="pasos">
+                    <!-- {{pasos}} -->
+                </div>
+            </div>
+        </div>
+    
+       
+    </div>
+    
+
+
+</div>
+
+
+
+

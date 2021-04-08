@@ -35,6 +35,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { BottonBurgerComponent } from './pages/botton-burger/botton-burger.component';
 import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
+import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
 
 
 @NgModule({
@@ -60,8 +62,8 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     MicronutrientChartComponent,
     IngestaMenuComponent,
     IntroducirManualComponent,
-    
-    
+    VistaRecetaComponent,
+    MicroScoreComponent,
     BottonBurgerComponent,
     BottonCruzComponent,
     UsuarioComponent,

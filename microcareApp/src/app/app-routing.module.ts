@@ -25,7 +25,9 @@ const routes: Routes = [
   {path:'home/grupo/micro',component:FichaMicroComponent},
   {path: 'usuario', component:UsuarioComponent},
   {path:'manual', component:IntroducirManualComponent},
-  {path:'anadir', component:IngestaMenuComponent}
+  {path:'anadir', component:IngestaMenuComponent},
+  {path:'calendario', component:CalendarioComponent},
+
 
 ];
 
