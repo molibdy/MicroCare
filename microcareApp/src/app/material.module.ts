@@ -4,6 +4,12 @@
  import { NgModule } from "@angular/core";
 import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {startWith} from 'rxjs/operators';
+import {MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
+
+
 const materialModules = [
   MatIconModule
 ];
@@ -13,12 +19,20 @@ const materialModules = [
    imports: [
      // Other material imports removed for brevity,
      MatIconModule,
-     materialModules
+     materialModules,
+     MatInputModule,
+     MatFormFieldModule,
+     MatAutocompleteModule
+
        ],
    exports: [
      // Other material exports removed for brevity,
      materialModules,
+     MatInputModule,
+     MatFormFieldModule,
      MatAutocompleteModule
+     
+
      
    ],
    entryComponents: [],

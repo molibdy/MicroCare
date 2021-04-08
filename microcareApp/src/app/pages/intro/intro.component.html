@@ -1,67 +1,123 @@
+<div [ngClass]='class'>
 
+<!-- //// pagina 1 /////
+ -->    
+ <div *ngIf="posicion == 0" class="col-center">
+<!--      // columna central
+ -->    <div class="col-center">
 
-<div class="col-center">
-
-    <div class="col-center 100 iphoneCard">
-        <div class=" row-left widthMenu marginLeft32">
- 
-            <div>
-                <img [src]="imageProfile" alt="" srcset="">
-                <div class="row-left text">El gestor de Micronutrientes </div>
-                <div class="row-left textSubtitle">perfil completado al 70%</div>
-            </div>
+            <div class="col-center  iphoneCard">
+                <div class=" row-left widthMenu marginLeft32">
+        
+                    <div class="col-center">
+                        
+                        <mat-icon svgIcon="logo" class="logo"></mat-icon>
+                        <div class="row-left textSubtitle">El gestor de Micronutrientes </div>
+                    </div>
+                </div>
+        
+    
+           
+    
+    
+    <!--             ///////////// barra buscar oculta
+     -->       
+                   
+    
+     <!--             ///////////// barra menu Burger
+     -->                             
+                    </div>
+                    <div class="busqueda col-center">
+                        <div class=" col-center textSubtitle  card-about colorWhite busqueda" >
+                            <div class="row-left widthMenu" >
+                                
+                                            <div class="marginLeft32"> 
+                                               
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolores in repellendus hic dolore ipsa ullam eaque vero iure rem? Exercitationem maiores cum libero laudantium ipsam ipsa accusamus assumenda? Eligendi.</p>
+                                            </div>
+                                            <div class="separadorMenu"></div>
+                                            <div>
+                                                
+                                            </div>
+                        </div>
+                        </div>
+                         <div class=" col-center  custom-hr"></div>
+                        
+                  
+                    </div>
+    
         </div>
-        <div class="row-left text widthMenu marginLeft32 ">Menu</div>
+            <div class="row-center">
+            <div  class="col-center  push_button text" id="botonRojo" (click)="toggle = true">Nuestra Historia</div>
+            <div  class="col-center  push_button text" id="botonRojo" (click)="toNext()">Visita guiada</div>
+    
+        </div>
+        
 
 
-       
+</div>
 
+<!-- //////////////// visita guiada -->
+    <div class="row-center" *ngIf="posicion > 0">
 
-<!--             ///////////// barra buscar oculta
- -->       
+        <div class="col-center ">
+
+            <div class="col-center 100 iphoneCard">
+                <div class=" row-center widthMenu marginLeft32">
+         
+                    <div class="row-center">
+                        <img [src]="imgIntro" class="imgSize">
+                    </div>
+
+                        <div class="row-center text colorWhite" >{{texto}} </div>
+                    </div>
+        
+        
                
-
- <!--             ///////////// barra menu Burger
- -->                             
-                </div>
-                <div class="busqueda col-center">
-                    <div class=" col-center text  menu-item colorWhite" >
-                        <div class="row-left widthMenu" >
+        
+        
+        <!--             ///////////// barra buscar oculta
+         -->       
+                       
+        
+         <!--             ///////////// barra menu Burger
+         -->                             
+                        </div>
+                        <div class="busqueda col-center">
+                            <div class=" col-center textSubtitle  card-about " >
+                                <div class="row-left widthMenu" >
+                                    
+                                                <div class="marginLeft32"> 
+                                                    
+                                                </div>
+                                                <div class="separadorMenu"></div>
+                                                <div>
+                                                    
+                                                </div>
+                            </div>
+                            </div>
                             
-                                        <div class="marginLeft32"> 
-                                            
-                                        </div>
-                                        <div class="separadorMenu"></div>
-                                        <div>Retos</div>
-                    </div>
-                    </div>
-                     <div class=" col-center  custom-hr"></div>
-                    
-                <div class=" col-center text  menu-item colorWhite" >
-                    <div class="row-left widthMenu" >
-                        
-                                    <div class="marginLeft32"> 
-                                    </div>
-                                    <div class="separadorMenu"></div>
-                                    <div>Recetas</div>
-                  </div>
-                </div>
-                <div class=" col-center  custom-hr"></div>
-                <div class=" col-center text  menu-item colorWhite" >
-                    <div class="row-left widthMenu" >
-                        
-                                    <div class="marginLeft32"> 
-                                    </div>
-                                    <div class="separadorMenu"></div>
-                                    <div>Configuracion</div>
-                  </div>
-                </div>
-                <div class=" col-center  custom-hr"></div>
-                <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
-                </div>
-        </div>
-        <div class="row-center">
-        <div class="col-center  menu-item colorWhite" id="botonRojo">hey</div>
+                      
+                        </div>
+                        <div class="row-center iphoneCard">
 
-        <button class="col-center menu-item \" id="botonVerde">hey</button>
+                        <div  class="col-center  push_button text" id="botonRojo" *ngIf="!disabled" (click)="toPrevius()"> <mat-icon class="iconSize" svgIcon="left-arrow"></mat-icon></div>
+
+                        <div  class="col-center  push_button text" id="botonRojo" *ngIf="posicion != 4" (click)="toNext()"><mat-icon class="iconSize" svgIcon="right-arrow"></mat-icon></div>
+                        <div  class="col-center  push_button text" id="botonRojo" *ngIf="posicion == 4" (click)="toNext()">Terminar</div>
+
+                        </div>
+                </div>
+       
     </div>
+
+</div>
+
+
+
+
+
+   
+
+      
+

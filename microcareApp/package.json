@@ -29,7 +29,9 @@
     "core-js": "^3.8.3",
     "date-fns": "^2.19.0",
     "ng-apexcharts": "^1.5.9",
+    "ngx-useful-swiper": "^10.0.1",
     "rxjs": "^6.6.7",
+    "swiper": "^6.5.4",
     "tslib": "^2.0.0",
     "zone": "^0.3.4",
     "zone.js": "^0.11.4"

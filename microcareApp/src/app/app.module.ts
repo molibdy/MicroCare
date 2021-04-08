@@ -11,8 +11,6 @@ import { CalendarioComponent } from './pages/calendario/calendario.component';
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { IntroComponent } from './pages/intro/intro.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 import { BuscadorRecetasComponent } from './pages/buscador-recetas/buscador-recetas.component';
 import { FichaGrupoComponent } from './pages/ficha-grupo/ficha-grupo.component';
@@ -26,6 +24,16 @@ import { AminoacidChartComponent } from './pages/aminoacid-chart/aminoacid-chart
 import { OmegasChartComponent } from './pages/omegas-chart/omegas-chart.component';
 import { GraficaOthersComponent } from './pages/grafica-others/grafica-others.component';
 import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronutrient-chart.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { IntroComponent } from './pages/intro/intro.component';
+import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
+import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
+
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
+
+
 
 
 @NgModule({
@@ -48,7 +56,10 @@ import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronu
     AminoacidChartComponent,
     OmegasChartComponent,
     GraficaOthersComponent,
-    MicronutrientChartComponent
+    MicronutrientChartComponent,
+    IngestaMenuComponent,
+    IntroducirManualComponent,
+    
     
   ],
   imports: [
@@ -58,7 +69,13 @@ import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronu
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    NgxUsefulSwiperModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule
+
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

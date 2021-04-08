@@ -1,0 +1,257 @@
+.busqueda
+{
+    height: auto;
+    margin: 0;
+    border-radius: 30px;
+    width: 340px;
+
+}
+.menu-item-expandible
+{
+    width: 287px;
+    height: auto;
+}
+
+.widtMenu
+{
+    width: inherit;
+}
+.text{
+    font-size: 28px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+  }
+  .textBoldGray{
+    font-size: 18px;
+    color: #B2C1C6;
+    font-family: dosis-bold;
+    padding: 10px 0 10px 0;
+  }
+  .textGuardarReceta
+  {
+    font-size: 20px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .textGuardarReceta:hover
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-bold;
+    text-decoration: underline
+  }
+
+  .textSubtitle
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-regular;
+    text-transform:lowercase;
+  }
+  .text20
+{
+    font-size: 22px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+}
+.text20Gray
+{
+    font-size: 22px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+}
+.boton-anadir
+{
+  width: 120px;
+  height: 54px;
+  text-decoration:none;
+  border-radius:20px;
+  border:solid 0px #87ffff;
+  background-color: #B2C1C6;
+  justify-content: center; 
+  text-align:center;
+  padding:10px 20px;
+  font-size: 22px;
+}
+
+.boton-anadir:active{
+  position:relative;
+  top:0.5px;
+  outline: none;
+}
+.boton-anadir:focus
+{
+  outline: none;
+}
+
+.boton-guardar
+{
+  width: 120px;
+  height: 54px;
+  text-decoration:none;
+  border-radius:20px;
+  border:solid 0px #87ffff;
+  background-color: #5ce1e6;
+  justify-content: center; 
+  text-align:center;
+  padding:10px 20px;
+  font-size: 22px;
+
+
+}
+.boton-guardar:active{
+  position:relative;
+  top:0.5px;
+  outline: none;
+}
+.boton-guardar:focus
+{
+  outline: none;
+}
+.inputGray
+{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 183px;
+  position: relative;
+  color: #B2C1C6;
+
+}
+.inputGray input
+{
+  text-decoration: none;
+  height: 53px;
+  width: 183px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  padding-left: 20px;
+  color: #B2C1C6;
+
+}
+
+.inputGray input:focus
+{
+  outline: none;
+}
+.inputGray input::placeholder
+{
+  color: #B2C1C6;
+}
+.inputGrayFavorito
+{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 287px;
+  position: relative;
+  color: #B2C1C6;
+
+}
+.inputGrayFavorito input
+{
+  text-decoration: none;
+  height: 53px;
+  width: 273px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  padding-left: 20px;
+  color: #B2C1C6;
+
+}
+
+.inputGrayFavorito input:focus
+{
+  outline: none;
+}
+.inputGrayFavorito input::placeholder
+{
+  color: #B2C1C6;
+}
+.height100{
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.inputPasos textarea 
+{
+  min-height: 100px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: 260px;
+  position: relative;
+  white-space: nowrap;  
+  resize: vertical;
+  padding-left: 20px;  
+  outline: none;
+  border:none
+
+}
+
+.absolute
+{
+  position: absolute;
+  right: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;}
+
+.listaIngredientes
+{
+  width: inherit;
+  background-color: rgb(255, 255, 255);
+  height: 53px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  margin-bottom: 20px;
+  min-height: 100px;
+  height: auto;
+  
+
+}
+.inputGray:focus
+{
+  outline: none;
+}
+.marginRight10
+{
+    margin-right: 10px; 
+}
+.marginleft10
+{
+    margin-left: 10px; 
+}
+.marginBottom10
+{
+    margin-bottom: 10px; 
+}
+.relative
+{
+  position: relative;
+}
+.iconSizeGray
+{
+    height: 18px;
+    width: 18px;
+}
