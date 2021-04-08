@@ -1,1 +1,73 @@
-<p>preferencias works!</p>
+
+<div class="row-right ancho100">
+    <div class="circle"> <mat-icon class="colorDark left-padding" true svgIcon="close"></mat-icon>
+    </div>
+</div>
+<div class="col-center">
+    <div class="col-center 100 iphoneCard">
+        <div class=" row-left widthMenu marginLeft32">
+
+            <div class="imageProfile" style="margin-right: 2px;"> <img [src]=imageProfile alt="fran"> </div>
+            <div>
+                <div class="row-left text">Fran Martinez</div>
+                <div class="row-left textSubtitle">perfil completado al 70%</div>
+            </div>
+        </div>
+        <br>
+        <div class="row-center text"><mat-icon class="colorBlue icono left-padding" true svgIcon="configuracion"></mat-icon>Preferencias</div>
+
+        <br>
+        <br>
+       
+
+ <!--             ///////////// barra menu Burger
+ -->                             
+                
+                <div class="busqueda">
+                    <!-- 1 -->
+                    <div (click)="pulsar1()" class="col-center menu-item colorWhite">
+                        <div class="text">Preferencias de Dieta <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    </div>
+                    <div class=" custom-hr"></div>
+
+                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable1">
+                        <div class="text colorWhite">
+
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div (click)="pulsar2()" class="col-center menu-item colorWhite">
+                        <div class="text">Alergias <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    </div>
+                    <div class=" custom-hr"></div>
+
+                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable2">
+                        <div class="text colorWhite">
+
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div (click)="pulsar3()" class="col-center menu-item colorWhite">
+                        <div class="text">Alimentos a evitar<mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    </div>
+                    <div class=" custom-hr"></div>
+                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable3">
+                        <div class="text colorWhite">
+
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div (click)="pulsar4()" class="col-center menu-item colorWhite">
+                        <div class="text">Suplementos <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    </div>
+                    <div class=" custom-hr"></div>
+                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable4">
+                        <div class="text colorWhite">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+ 

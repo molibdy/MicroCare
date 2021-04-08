@@ -1,1 +1,49 @@
-<p>ficha-grupo works!</p>
+<div class="row-right">
+    <div class="circle-burger"> <mat-icon class="blue left-padding burger" true svgIcon="burger"></mat-icon>
+    </div>
+</div>
+<br>
+
+<div class="tarjeta">
+    
+    <div class="row-right ancho100">
+        <div class="circle"> <mat-icon class="blue left-padding" true svgIcon="close"></mat-icon>
+        </div>
+    </div>
+
+    <div class="row-center ancho100">
+        <div class="circlePic"></div>        
+    </div>
+
+    <br>
+
+    <div class="row-center ancho100">
+        <div class="text">{{grupos[0]}}
+        </div>
+    </div>
+
+    <br>
+    <div class="row-left wrap ancho100 chip-container">
+        <div *ngFor="let micro of micronutrientes"> 
+            <div class="chip-grande">{{micro}}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="hr"></div>
+    <br>
+
+    <div class="tarjeta-peque ancho100">
+        <br>
+        <div class="titulo">
+            {{micronutrientes[0]}}
+        </div>
+        <br>
+        <div class="cuerpo">
+            {{micronutrientes[3]}}
+        </div>
+
+    </div>
+
+</div>
+
