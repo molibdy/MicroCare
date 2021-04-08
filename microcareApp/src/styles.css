@@ -284,3 +284,10 @@ body{
     flex-wrap: wrap;
 }
 
+.header{
+    height: 60px;
+}
+
+.footer{
+    height: 60px;
+}

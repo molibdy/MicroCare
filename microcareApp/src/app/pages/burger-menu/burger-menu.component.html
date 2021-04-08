@@ -1,20 +1,9 @@
-<div class=" contenedor">
-    <div class="row-right">
-        <div class="circle" (click)='perderfoco()'>X</div>
-    </div>
-</div>
+<app-botton-cruz></app-botton-cruz>
 
 <div class="col-center">
 
     <div class="col-center 100 iphoneCard">
-        <div class=" row-left widthMenu marginLeft32">
- 
-            <div class="imageProfile" style="margin-right: 2px;"> <img [src]=imageProfile alt="fran"> </div>
-            <div>
-                <div class="row-left text">Fran Martinez</div>
-                <div class="row-left textSubtitle">perfil completado al 70%</div>
-            </div>
-        </div>
+        <app-usuario></app-usuario>
         <div class="row-left text widthMenu marginLeft32 ">Menu</div>
 
 
@@ -52,7 +41,7 @@
                                         <div class="marginLeft32"> 
                                             <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
                                         </div>
-                                        <div class="separadorMenu"></div>
+                                        <div class="separadorMenu" routerLink="../dia"></div>
                                         <div>Retos</div>
                     </div>
                     </div>
@@ -64,7 +53,7 @@
                                     <div class="marginLeft32"> 
                                         <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
                                     </div>
-                                    <div class="separadorMenu"></div>
+                                    <div  class="circle-cruz" routerLink="../recetas" class="separadorMenu"></div>
                                     <div>Recetas</div>
                   </div>
                 </div>
@@ -75,7 +64,7 @@
                                     <div class="marginLeft32"> 
                                         <mat-icon class="iconSize colorBlue" [inLine]=true svgIcon="search"></mat-icon>
                                     </div>
-                                    <div class="separadorMenu"></div>
+                                    <div class="separadorMenu" routerLink="../configuracion"></div>
                                     <div>Configuracion</div>
                   </div>
                 </div>

@@ -1,21 +1,10 @@
 
-<div class="row-right ancho100">
-    <div class="circle"> <mat-icon class="colorDark left-padding" true svgIcon="close"></mat-icon>
-    </div>
-</div>
+<app-botton-cruz></app-botton-cruz>
 <div class="col-center">
     <div class="col-center 100 iphoneCard">
-        <div class=" row-left widthMenu marginLeft32">
-
-            <div class="imageProfile" style="margin-right: 2px;"> <img [src]=imageProfile alt="fran"> </div>
-            <div>
-                <div class="row-left text">Fran Martinez</div>
-                <div class="row-left textSubtitle">perfil completado al 70%</div>
-            </div>
-        </div>
+        <app-usuario></app-usuario>
         <br>
         <div class="row-center text"><mat-icon class="colorBlue icono left-padding" true svgIcon="configuracion"></mat-icon>Preferencias</div>
-
         <br>
         <br>
        
@@ -30,9 +19,10 @@
                     </div>
                     <div class=" custom-hr"></div>
 
-                    <div class="menu-desplegable col-center colorWhite" *ngIf="desplegable1">
-                        <div class="text colorWhite">
-
+                    <div class="colorWhite" *ngIf="desplegable1">
+                        <div class="text row-center">
+                            <div [ngClass]="chip1" (click)="azul1()">vegetariano</div>
+                            <div [ngClass]="chip2" (click)="azul2()">vegano</div>
                         </div>
                     </div>
                     <!-- 2 -->

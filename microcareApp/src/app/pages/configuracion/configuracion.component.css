@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -50px;
 }
 
 .circle{
@@ -137,4 +138,32 @@ outline: none;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+.tarjeta{
+    width: 375px;
+    border: 30px;
+    height: 705px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:white;
+    border-radius: 16px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px;
+}
+
+.header1{
+    height: 90px;
+    
+}
+.imageProfile img
+{
+    width: 130px;
+    border: solid 8px rgb(255, 255, 255);
+    border-radius: 50%;
 }

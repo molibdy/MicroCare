@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +26,9 @@ import { AminoacidChartComponent } from './pages/aminoacid-chart/aminoacid-chart
 import { OmegasChartComponent } from './pages/omegas-chart/omegas-chart.component';
 import { GraficaOthersComponent } from './pages/grafica-others/grafica-others.component';
 import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronutrient-chart.component';
+import { BottonBurgerComponent } from './pages/botton-burger/botton-burger.component';
+import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
 
 
 @NgModule({
@@ -48,8 +51,11 @@ import { MicronutrientChartComponent } from './pages/micronutrient-chart/micronu
     AminoacidChartComponent,
     OmegasChartComponent,
     GraficaOthersComponent,
-    MicronutrientChartComponent
-    
+    MicronutrientChartComponent,
+    BottonBurgerComponent,
+    BottonCruzComponent,
+    UsuarioComponent,
+  
   ],
   imports: [
     BrowserModule,
