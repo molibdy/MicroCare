@@ -1,18 +1,8 @@
-<div class="row-right">
-    <div class="circle-burger"> <mat-icon class="blue left-padding burger" true svgIcon="burger"></mat-icon>
-    </div>
-</div>
-<br>
-
+<div class="header"></div>
 <div class="tarjeta">
-    
-    <div class="row-right ancho100">
-        <div class="circle"> <mat-icon class="blue left-padding" true svgIcon="close"></mat-icon>
-        </div>
-    </div>
-
+    <app-botton-cruz></app-botton-cruz>
     <div class="row-center ancho100">
-        <div class="circlePic"></div>        
+        <div class="circlePic"><app-micronutrient-chart></app-micronutrient-chart></div>        
     </div>
 
     <br>
@@ -25,7 +15,7 @@
     <br>
     <div class="row-left wrap ancho100 chip-container">
         <div *ngFor="let micro of micronutrientes"> 
-            <div class="chip-grande">{{micro}}
+            <div class="chip-grande" routerLink="micro">{{micro}}
             </div>
         </div>
     </div>

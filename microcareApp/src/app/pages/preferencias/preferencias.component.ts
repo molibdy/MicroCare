@@ -14,12 +14,15 @@ export class PreferenciasComponent implements OnInit {
   public desplegable2: boolean = false
   public desplegable3: boolean = false
   public desplegable4: boolean = false
-
+  public chip1:string ="chip-grande"
+  public chip2:string ="chip-grande"
   constructor() {
   this.desplegable1
   this.desplegable2
   this.desplegable3
   this.desplegable4
+  this.chip1
+  this.chip2
 }
   pulsar1(){
     if(this.desplegable1){
@@ -56,7 +59,24 @@ export class PreferenciasComponent implements OnInit {
       this.desplegable3 =true
     }
    }
-  
+
+   azul1(){
+    if(this.chip1 == "chip-grande"){
+    this.chip1 = "chip-grande-azul"
+    }
+    else {
+      this.chip1 ="chip-grande"
+    }
+   }
+
+   azul2(){
+    if(this.chip2 == "chip-grande"){
+    this.chip2 = "chip-grande-azul"
+    }
+    else {
+      this.chip2 ="chip-grande"
+    }
+   }
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');

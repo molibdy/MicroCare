@@ -22,8 +22,10 @@ input{
     cursor: pointer;
     outline: none;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
 }
 
 .burger{
@@ -62,7 +64,7 @@ input{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .circle-burger{
@@ -170,6 +172,7 @@ input{
 
 
 .wrapper{
+    width: 100%;
     max-height: 250px;
     border: 10% solid white;
     display: flex;

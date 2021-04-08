@@ -1,16 +1,10 @@
-
+<!-- menu-burger -->
+<app-botton-burger></app-botton-burger>
+ 
  <!-- Esto debería ser el componente perfil-header -->
  
- <div class="col-center">
-    <div class=" row-left ">
-
-        <div class="imageProfile" style="margin-right: 2px;"> <img [src]=imageProfile alt="fran"> </div>
-        <div>
-            <div class="row-left text">Fran Martinez</div>
-            <div class="row-left textSubtitle">perfil completado al 70%</div>
-        </div>
-    </div>
-
+ 
+ <app-usuario></app-usuario>
 
 
 
@@ -19,22 +13,22 @@
 
 <div class="iphoneCard">
     <div class="row-center-wrap">
-        <div class="col-center">
+        <div routerLink="grupo" class="col-center">
             <app-vitamin-chart></app-vitamin-chart>
             <div class="title">Vitaminas</div>
         </div>
         
-        <div class="col-center">
+        <div routerLink="grupo" class="col-center">
             <app-mineral-chart></app-mineral-chart>
             <div class="title">Minerales</div>
         </div>
         
-        <div class="col-center">
+        <div routerLink="grupo" class="col-center">
             <app-omegas-chart routerLink="../calendario"></app-omegas-chart>
             <div class="title">Ácidos grasos</div>
         </div>
         
-        <div class="col-center">
+        <div routerLink="grupo" class="col-center">
             <app-aminoacid-chart></app-aminoacid-chart>
             <div class="title">Aminoácidos</div>
         </div>

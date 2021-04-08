@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -34,6 +34,9 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 
+import { BottonBurgerComponent } from './pages/botton-burger/botton-burger.component';
+import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
 
 
 @NgModule({
@@ -57,10 +60,17 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     OmegasChartComponent,
     GraficaOthersComponent,
     MicronutrientChartComponent,
+<<<<<<< HEAD
     IngestaMenuComponent,
     IntroducirManualComponent,
     
     
+=======
+    BottonBurgerComponent,
+    BottonCruzComponent,
+    UsuarioComponent,
+  
+>>>>>>> rodri
   ],
   imports: [
     BrowserModule,
