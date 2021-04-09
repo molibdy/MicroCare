@@ -13,8 +13,12 @@
 
 <app-vista-receta></app-vista-receta>-->
 <router-outlet></router-outlet>
-<app-login></app-login>
-<div >
 
+<div *ngIf="LoginInfoService.isDentro; else login">
+    <app-nav-bar></app-nav-bar>
 </div>
-<app-nav-bar></app-nav-bar>
+
+<div #login>
+    <app-login></app-login>
+</div>
+

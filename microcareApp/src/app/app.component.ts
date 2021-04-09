@@ -1,6 +1,7 @@
 import { MatIconRegistry } from '@angular/material/icon';
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { LoginInfoService } from './shared/login-info.service';
 
 
 
@@ -12,10 +13,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  
+
   constructor(
     private matIconRegistry: MatIconRegistry,
-    private domSanitizer : DomSanitizer
+    private domSanitizer : DomSanitizer,
+    public LoginInfoService:LoginInfoService
   )
   {
 /*    //////////////////// CREAR ICONOS //////////////////////// */
