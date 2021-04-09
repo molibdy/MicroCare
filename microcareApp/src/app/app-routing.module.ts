@@ -12,6 +12,7 @@ import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -26,9 +27,7 @@ const routes: Routes = [
   {path: 'usuario', component:UsuarioComponent},
   {path:'manual', component:IntroducirManualComponent},
   {path:'anadir', component:IngestaMenuComponent},
-  {path:'calendario', component:CalendarioComponent},
-
-
+  {path:'receta', component:VistaRecetaComponent},
 ];
 
 @NgModule({

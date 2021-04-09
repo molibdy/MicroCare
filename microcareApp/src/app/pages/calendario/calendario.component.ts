@@ -90,10 +90,12 @@ export class CalendarioComponent implements OnInit {
 
   public nextDay(){
     this.date.setDate(this.date.getDate()+1)
+    this.fecha=this.dateString()
   }
 
   public prevDay(){
     this.date.setDate(this.date.getDate()-1)
+    this.fecha=this.dateString()
   }
 
   public fillRecipes(){
