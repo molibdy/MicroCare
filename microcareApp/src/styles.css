@@ -16,6 +16,11 @@
 .backgroundGray{
     background-color: #B2C1C6;
 }
+.backgroundGrayOpacity
+{
+   background-color:  rgba(178, 193, 198, 0.185)
+    
+}
 
 
 /* Colores de fondo micronutrientes */
@@ -151,85 +156,14 @@ body{
     src: url(assets/Dosis-Bold.ttf);
 }
 
-<<<<<<< HEAD
-
-=======
-.dosis-bold
-{
-    font-family: dosis-bold;
+@font-face {
+    font-family: "dosis-medium";
+    src: url(assets/Dosis-Medium.ttf);
 }
-.dosis-regular
-{
-    font-family: dosis-regular;
+@font-face {
+    font-family: "dosis-semiBold";
+    src: url(assets/Dosis-SemiBold.ttf);
 }
-.dosis-light
-{
-    font-family: dosis-light;
-}
-/* FILAS Y COLUMNAS */
-
-.row-center{
-    display: flex;
-    flex-direction: row;
-    /* text-align: center; */
-    /* align-self: center; */
-    align-items: center;    /* alinea elementos horizontalmente en el centro de la fila */
-    /* justify-items: center; */
-    justify-content: center;   /* alinea elementos verticalmente en el centro */
-}
-
-.row-right{
-    display: flex;
-    flex-direction: row;
-    /* text-align: right; */
-    /* align-self: right; */
-    align-items: right;   /* alinea elementos horizontalmente en el centro de la fila*/
-    /* justify-items: right; */
-    justify-content: flex-end;   /* alinea elementos verticalmente a la derecha */
-}
-
-.row-left{
-    display: flex;
-    flex-direction: row;
-    /* text-align:right; */
-    /* align-self: left; */
-    align-items: center;    /* alinea elementos horizontalmente en el centro de la fila*/
-    /* justify-items: baseline; */
-    justify-content: flex-start;    /* alinea elementos verticalmente a la izquierda */
-}
-
-.col-center{
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    /* align-self: center; */
-    align-items:center;     /* alinea elementos verticalmente en el centro */
-    /* justify-items:center; */
-    justify-content: center; /* sitúa elementos en la parte central de la columna */
-}
-
-.col-right{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    /* align-self: right; */
-    align-items:flex-end;   /* alinea elementos verticalmente a la derecha */
-    /* justify-items:right; */
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
-}
-
-.col-left{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    /* align-self: left; */
-    align-items: flex-start;   /* alinea elementos verticalmente a la izquierda */
-    /* justify-items: left; */
-    /* justify-content: flex-end;  sitúa elementos en la parte inferior de la columna */
-    
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
-}
->>>>>>> fran4
 
 /* //////////////////////////////////button */
 
@@ -346,7 +280,7 @@ body{
     /* align-self: right; */
     align-items:flex-end;   /* alinea elementos verticalmente a la derecha */
     /* justify-items:right; */
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
+    justify-content: center;  /* sitúa elementos en la parte superior de la columna */
     flex-wrap: wrap;
 }
 
@@ -358,7 +292,7 @@ body{
     align-items: flex-start;   /* alinea elementos verticalmente a la izquierda */
     /* justify-items: left; */
     /* justify-content: flex-end;  sitúa elementos en la parte inferior de la columna */
-    justify-content: flex-start;  /* sitúa elementos en la parte superior de la columna */
+    justify-content: center;  /* sitúa elementos en la parte superior de la columna */
     flex-wrap: wrap;
 }
 

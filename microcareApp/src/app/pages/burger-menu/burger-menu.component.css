@@ -2,7 +2,6 @@
 
 .iphoneCard
 {
-    margin: 20px;
     width: 340px;
     border-radius: 30px;
 }
@@ -13,10 +12,15 @@
 }
 .menu-item
 {
-    width: 100%;
+    width: inherit;
     height: 100px;
   /*   border: solid 0.5px 0.5px 0 0 #B2C1C6;
     border-bottom: solid 0.5px rgba(178, 193, 198, 0.685); */
+}
+.menu-item-expandible
+{
+    width: 100%;
+    height: auto;
 }
 
 .menu-item:hover
@@ -67,6 +71,14 @@
     font-family: dosis-regular;
     text-transform:lowercase;
   }
+  .text20
+{
+    font-size: 28px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+}
 
 .buscarNavbar input
 {
@@ -104,12 +116,15 @@
     outline: none;
    
 }
+
 .busqueda
 {
-    height: 300px;
+    height: auto;
     margin: 0;
-    border-radius: 0px 0 30px 30px;
+    border-radius: 0px 0px 30px 30px;
     width: 340px;
+    margin-bottom: 100px;
+
 /*     background-color:  rgba(178, 193, 198, 0.185);;
  */    overflow-x: hidden;
     overflow-y:auto;
@@ -134,6 +149,10 @@
 {
     width: 30px;
 }
+.separadorMenuDesplegable
+{
+    width: 40px;
+}
 .marginLeft32
 {
     margin-left: 32px;
@@ -142,30 +161,26 @@
 .row-left{
     display: flex;
     flex-direction: row;
-    align-content: left;
+    align-content: center;
     justify-content: flex-start;
     justify-items: left;
+    align-items: center;
 
- 
 }
-
-.custom-hr
-{
-    width: 300px;
-    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
-    position: relative;
-    align-self: center;
-}
-
 .widthMenu
 {
-    width: 100%;
+    width: inherit;
 }
 
 .iconSize
 {
     height: 32px;
     width: 32px;
+}
+.iconSizeGray
+{
+    height: 22px;
+    width: 22px;
 }
 .fontAwesome {
     font-family: Helvetica, 'FontAwesome', sans-serif;
@@ -185,26 +200,11 @@
    border: solid 8px rgb(255, 255, 255);
     border-radius: 50%;
 }
-
-.burger{
-    width: 50px;
-    height: 100px;
+.custom-hr
+{
+    width: 300px;
+    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
+    position: relative;
+    align-self: center;
 }
 
-.circle-burger{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    font-size: 16px;
-    font-weight: 500;
-    background-color:white;
-    border: none;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-right: 20px;
-}

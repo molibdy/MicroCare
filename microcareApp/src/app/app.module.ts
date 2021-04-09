@@ -37,6 +37,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { BottonBurgerComponent } from './pages/botton-burger/botton-burger.component';
 import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { BarraBuscadorComponent } from './pages/buscador/barra-buscador/barra-buscador.component';
+import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favoritos.component';
 
 
 @NgModule({
@@ -60,17 +62,16 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     OmegasChartComponent,
     GraficaOthersComponent,
     MicronutrientChartComponent,
-<<<<<<< HEAD
     IngestaMenuComponent,
     IntroducirManualComponent,
     
     
-=======
     BottonBurgerComponent,
     BottonCruzComponent,
     UsuarioComponent,
+    BarraBuscadorComponent,
+    FavoritosComponent,
   
->>>>>>> rodri
   ],
   imports: [
     BrowserModule,
