@@ -8,7 +8,7 @@
         <div class="menu-item-expandible">
         <form class="example-form">
           <mat-form-field class="example-full-width">
-            <mat-label>Ingrediente</mat-label>
+            <mat-label class="inputGray">Ingrediente</mat-label>
             <input type="text"
                   placeholder="Pick one"
                   aria-label="Number"
@@ -25,11 +25,11 @@
           <div class="row-left widthMenu menu-item-expandible colorGray">
               <div class=" marginRight10 text20Gray height100">Cantidad</div>
               <div class="row-left inputGray ">
-                  <mat-icon svgIcon='search' class="absolute"></mat-icon>
+                  <p class="absolute text20Gray" style="text-transform: none; top: 15px;">gramos</p>
                   <input type="number"  #peso>
               </div>
           </div>
-          <div class="row-center"><button class="boton-anadir colorWhite dosis-bold backgroundGray " (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'>Añadir</button></div>
+          <div class="row-center"><button class="boton-anadir colorWhite dosis-bold backgroundGray " (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'><mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></button></div>
 
           <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Ingredientes añadidos:</div>
 
@@ -39,7 +39,7 @@
                 <div class="row-left">
                   <div>
                     <ol >
-                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">{{ingredient.ingrediente}}, {{ingredient.peso}} <mat-icon class="absolute iconSizeGray" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
+                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">Ingrediente: {{ingredient.ingrediente}},  Peso: {{ingredient.peso}} gramos <mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
                     </ol>
                 </div>
               
@@ -52,7 +52,7 @@
         -->
         <div></div>
         <div *ngIf="isRecAnadida">
-        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 relative">Añadir pasos<mat-icon class="absolute iconSizeGray" svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
+        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 relative">Añadir pasos<mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
             <div class="row-left listaIngredientes">

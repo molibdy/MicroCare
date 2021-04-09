@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
 import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PreferenciasComponent } from './pages/preferencias/preferencias.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
@@ -28,8 +29,14 @@ const routes: Routes = [
   {path: 'usuario', component:UsuarioComponent},
   {path:'manual', component:IntroducirManualComponent},
   {path:'anadir', component:IngestaMenuComponent},
+  {path:'calendario', component:CalendarioComponent},
+  {path:'home', component:HomeComponent},
 
+  {path:'anadir', component:IngestaMenuComponent},
   {path:'seleccionarRecetas',component:BarraBuscadorComponent},
+  {path:'menu/configuracion', component:ConfiguracionComponent},
+  {path:'menu/preferencias', component:PreferenciasComponent},
+
 
   {path:'receta', component:VistaRecetaComponent},
 ];

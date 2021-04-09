@@ -13,6 +13,10 @@ export class FavoritosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  anadirFavorito()
+  {
+    
+  }
 
 
 }

@@ -1,9 +1,43 @@
 .favoriteCard{
-    display: flex;
-    width: 156px;
+    width: 146px;
     height: 122px;
-    margin: 13px;
+    margin: 10px;
+    border-radius: 10px;
 }
-.iphoneCard{
+
+.row-left-wrap{
+    display: flex;
+    flex-direction: row;
+    /* text-align:right; */
+    /* align-self: left; */
+    align-items: center;    /* alinea elementos horizontalmente en el centro de la fila*/
+    /* justify-items: baseline; */
+    justify-content: flex-start;    /* alinea elementos verticalmente a la izquierda */
+    flex-wrap: wrap;
     
 }
+.busqueda
+{
+    height: auto;
+    margin: 0;
+    width: 340px;
+    border: solid 1px ;
+}
+
+.text{
+    font-size: 28px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: capitalize;
+  }
+
+  .text20
+  {
+      font-size: 22px;
+      color: #667a92;
+      text-align: center;
+      font-family: dosis-bold;
+      text-transform: capitalize;
+  }
+

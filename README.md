@@ -27,3 +27,7 @@ Además he subido el componente micronutrient-chart con instrucciones para cuand
 Rodri 08/04: Subida de los componentes, botton cruz, botton burger y usuario. Actualizacion de Configuracion, fichas micro y fichas grupo. 
 Me da pete el burger menu.
 FRAN 08/04 17:00 Modulo intro a medias y modulo anadir ingesta y submodulo introducir manual. 
+
+FRAN 09/04 17:00 Modulo anadir ingesta al 80% y submodulo introducir manual arreglado, version 60% burger menu
+
+

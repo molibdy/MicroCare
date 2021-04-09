@@ -43,14 +43,8 @@
                     <div class=" col-center  custom-hr"></div>
 <!--                     //// otro item //// 
 <<<<<<< HEAD
-<<<<<<< HEAD
- -->                        <div class=" col-center  menu-item colorWhite" routerLink="../receta">
-=======
- -->                        <div class=" col-center  menu-item colorWhite" *ngIf="!introducirRecetaBooleano" >
->>>>>>> fran5
-=======
- -->                        <div class=" col-center  menu-item colorWhite" routerLink="../buscar-receta">
->>>>>>> rodri
+ -->                        <div class=" col-center  menu-item colorWhite" routerLink="../buscar-receta" *ngIf="!introducirRecetaBooleano">
+
                             <div class="row-left widthMenu" >
                         
                                     <div class="marginLeft32"> 
@@ -63,8 +57,9 @@
                             <div class=" col-center custom-hr"></div>
 <!--                 //// bara final
  -->              <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
+                <app-favoritos></app-favoritos>
+
                 </div>
         </div>
-        <app-favoritos></app-favoritos>
         
 
