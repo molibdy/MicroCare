@@ -39,6 +39,10 @@ import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.componen
 import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
 import { BarraBuscadorComponent } from './pages/buscador/barra-buscador/barra-buscador.component';
 import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favoritos.component';
+import { Intro1Component } from './pages/intro1/intro1.component';
+import { Intro2Component } from './pages/intro2/intro2.component';
+import { Intro3Component } from './pages/intro3/intro3.component';
+import { Intro4Component } from './pages/intro4/intro4.component';
 
 
 
@@ -74,6 +78,10 @@ import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favorit
     UsuarioComponent,
     BarraBuscadorComponent,
     FavoritosComponent,
+    Intro1Component,
+    Intro2Component,
+    Intro3Component,
+    Intro4Component,
   
   ],
   imports: [

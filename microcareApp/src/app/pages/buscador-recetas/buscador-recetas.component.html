@@ -1,87 +1,99 @@
 <app-botton-burger></app-botton-burger>
-<br>
+
 <div class="text row-left">
     Recetas
 </div>
 <br>
 <div class="col-center">
     <div class="input left-padding">
-        <mat-icon class="blue" true svgIcon="search"></mat-icon><input placeholder="Buscar">
+        <input placeholder="Buscar">
+        <div class="mas"><mat-icon class="colorDark" true svgIcon="search"></mat-icon></div>
     </div>
 </div>
     <br>
+    
+<div class="tarjeta">
     <br>
+    <div class="row-left">
+        <div class="text ">
+        Para ti
+        </div>
+    </div>
     <br>
-<div class="row-left">
-    <div class="text ">
-    Para ti
+
+    <div  class="wrapper">
+        <div *ngFor="let receta of listaParaTi" class="item" routerLink="../receta">
+            <div class="row-left"> 
+                <div class="chip1">
+                    {{receta.preferencia1}}
+                </div>
+                <div class="chip2">
+                    {{receta.preferencia2}}
+                </div>
+            </div>
+            <div class="foto">
+                <img [src]="receta.foto">
+            </div>
+            <div class="row-center">
+                <div class="row-center">
+                    <div class="nombre-receta">
+                        {{receta.nombre}}
+                    </div>
+                </div>
+                <div class="row-center">
+                    <div class="chip-micro1">
+                        {{receta.chip1}}
+                    </div>
+                    <div class="chip-micro2">
+                        {{receta.chip2}}
+                    </div> 
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<br>
+    <br>
+    <div class="tarjeta">
+        <br>
+        <div class="row-left">
+            <div class="text ">
+            Nuevas en la app
+            </div>
+        </div>
+        <br>
 
 <div class="wrapper">
-    <div class="item" routerLink="../receta">
+    <div *ngFor="let receta of listaNuevas" class="item" routerLink="../receta">
         <div class="row-left"> 
             <div class="chip1">
-                Vegano
+                {{receta.preferencia1}}
             </div>
             <div class="chip2">
-                Vegetariano
+                {{receta.preferencia2}}
             </div>
         </div>
         <div class="foto">
-            <img src="https://carneentucasa.com/archivos/Noticias/983.jpg">
+            <img [src]="receta.foto"/>
         </div>
         <div class="row-center">
             <div class="row-center">
                 <div class="nombre-receta">
-                    Cocido Madrileño
+                    {{receta.nombre}}
                 </div>
             </div>
             <div class="row-center">
                 <div class="chip-micro1">
-                    B
+                    {{receta.chip1}}
                 </div>
                 <div class="chip-micro2">
-                        Mo
-                </div> 
-            </div>
-        </div>
-    </div>
-    <div class="item" routerLink="../receta">
-        <div class="row-left"> 
-            <div class="chip1">
-                Vegano
-            </div>
-            <div class="chip2">
-                Vegetariano
-            </div>
-        </div>
-        <div class="foto">
-            <img src="https://carneentucasa.com/archivos/Noticias/983.jpg">
-        </div>
-        <div class="row-center">
-            <div class="row-center">
-                <div class="nombre-receta">
-                    Cocido Madrileño
-                </div>
-            </div>
-            <div class="row-center">
-                <div class="chip-micro1">
-                    B
-                </div>
-                <div class="chip-micro2">
-                        Mo
+                    {{receta.chip2}}
                 </div> 
             </div>
         </div>
     </div>
 </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  
+  <div class="footer"></div>
+  <div class="footer"></div>
 
 

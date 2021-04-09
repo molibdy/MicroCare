@@ -6,7 +6,11 @@
         <form [formGroup]="myForm">
             <div class="form-group">
                 <div class="input">
-                    <input placeholder="Nombre de usuario">
+                    <input type="text" class="form-control" formControlName="usuario" placeholder="Nombre de usuario"
+                    [ngClass]="{'is-invalid': !myForm.get('usuario').valid}">
+                </div>
+                <div *ngIf="!myForm.get('usuario').valid" class="invalid-feedback">
+                    El usuario es necesario
                 </div>
             </div>
         <br>
@@ -19,7 +23,9 @@
         </div>
         <br>
         <br>
-        <div class="button-blue" routerLink="../login">crear cuenta</div>
+        <div class="form-group">
+            <button class="button-blue" [disabled]="myForm.invalid" routerLink="../login">crear cuenta</button>
+        </div>       
         <br>
         <br>
         <div class="col-center">

@@ -25,23 +25,23 @@ export class IntroComponent implements OnInit {
         break;
         case 1:
         this.class = "uno";
-        this.texto = "";
+        this.texto = "fdsfas";
         this.imgIntro = "https://www.flaticon.com/svg/vstatic/svg/3274/3274038.svg?token=exp=1617806732~hmac=46321abd73823e3632db7ff6e9910ec3";
         
         break;
         case 2:
         this.class = "dos";
-        this.texto = "";
+        this.texto = "fdsfsfs";
         this.imgIntro = "";
         break;
         case 3:
         this.class = "tres";
-        this.texto = "";
+        this.texto = "fdsfsf";
         this.imgIntro = "";
         break;
         case 4:
         this.class = "cuatro";
-        this.texto = "";
+        this.texto = "dasdad";
         this.imgIntro = "";
         break;
     }

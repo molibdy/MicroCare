@@ -10,6 +10,11 @@ import { FichaMicroComponent } from './pages/ficha-micro/ficha-micro.component';
 import { HomeComponent } from './pages/home/home.component';
 import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
 import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
+import { IntroComponent } from './pages/intro/intro.component';
+import { Intro1Component } from './pages/intro1/intro1.component';
+import { Intro2Component } from './pages/intro2/intro2.component';
+import { Intro3Component } from './pages/intro3/intro3.component';
+import { Intro4Component } from './pages/intro4/intro4.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PreferenciasComponent } from './pages/preferencias/preferencias.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -26,20 +31,23 @@ const routes: Routes = [
   {path:'buscar-receta', component:BuscadorRecetasComponent},
   {path:'home/configuracion', component:ConfiguracionComponent},
   {path:'home/grupo/micro',component:FichaMicroComponent},
-  {path: 'usuario', component:UsuarioComponent},
+  {path:'usuario', component:UsuarioComponent},
   {path:'manual', component:IntroducirManualComponent},
   {path:'anadir', component:IngestaMenuComponent},
   {path:'calendario', component:CalendarioComponent},
   {path:'home', component:HomeComponent},
-
+  {path:'receta', component:VistaRecetaComponent},
   {path:'anadir', component:IngestaMenuComponent},
   {path:'seleccionarRecetas',component:BarraBuscadorComponent},
   {path:'menu/configuracion', component:ConfiguracionComponent},
-  {path:'menu/preferencias', component:PreferenciasComponent},
-
-
-  {path:'receta', component:VistaRecetaComponent},
+  {path:'intro', component:IntroComponent},
+  {path:'intro1', component:Intro1Component},
+  {path:'intro2', component:Intro2Component},
+  {path:'intro3', component:Intro3Component},
+  {path:'intro4', component:Intro4Component},
+  {path:'preferencias', component:PreferenciasComponent},
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

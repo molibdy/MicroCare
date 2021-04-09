@@ -44,7 +44,19 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon("burger",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/hamburguesa.svg"));
     this.matIconRegistry.addSvgIcon("flecha-desplegable",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/right-arrow.svg"));
 
-
+    this.matIconRegistry.addSvgIcon("apio",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Apio.svg"));
+    this.matIconRegistry.addSvgIcon("cacahuetes",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Cacahuetes.svg"));
+    this.matIconRegistry.addSvgIcon("crustaceo",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Crustaceos.svg"));
+    this.matIconRegistry.addSvgIcon("frutosSecos",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/FrutosSecos.svg"));
+    this.matIconRegistry.addSvgIcon("gluten",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Gluten.svg"));
+    this.matIconRegistry.addSvgIcon("huevo",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Huevo.svg"));
+    this.matIconRegistry.addSvgIcon("leche",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Leche.svg"));
+    this.matIconRegistry.addSvgIcon("moluscos",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Moluscos.svg"));
+    this.matIconRegistry.addSvgIcon("mostaza",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Mostaza.svg"));
+    this.matIconRegistry.addSvgIcon("pescado",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Pescado.svg"));
+    this.matIconRegistry.addSvgIcon("sesamo",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/Sesamo.svg"));
+    this.matIconRegistry.addSvgIcon("sulfitos",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/sulfitos.svg"));
+    this.matIconRegistry.addSvgIcon("altramuces",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos/altramuces.svg"));
   }
   
   title = 'microcareApp';

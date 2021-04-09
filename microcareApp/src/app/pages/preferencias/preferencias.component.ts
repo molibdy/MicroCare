@@ -16,6 +16,7 @@ export class PreferenciasComponent implements OnInit {
   public desplegable4: boolean = false
   public chip1:string ="chip-grande"
   public chip2:string ="chip-grande"
+
   constructor() {
   this.desplegable1
   this.desplegable2
@@ -81,5 +82,7 @@ export class PreferenciasComponent implements OnInit {
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
+
+
 
 }

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailValidator, FormGroup, Validators } from '@angular/forms';
+import { EmailValidator, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
 export class RegisterComponent implements OnInit {
   public myForm: FormGroup
-  formBuilder: any;
-  constructor() { 
+  constructor(private formBuilder: FormBuilder) { 
     this.buildForm()
   }
  
@@ -28,6 +28,7 @@ export class RegisterComponent implements OnInit {
     })
 
   }
+
 
 
 }

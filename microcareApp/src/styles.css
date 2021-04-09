@@ -287,7 +287,6 @@ body{
     align-items: flex-start;   /* alinea elementos verticalmente a la izquierda */
     /* justify-items: left; */
     /* justify-content: flex-end;  sitúa elementos en la parte inferior de la columna */
-    
     justify-content: center;  /* sitúa elementos en la parte superior de la columna */
 
 }
