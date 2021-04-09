@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { LoginInfoService } from 'src/app/shared/login-info.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public LoginInfoService:LoginInfoService) { 
+ 
+  }
+
+  public entrar(){
+    this.LoginInfoService.isDentro=true
+  }
+  
 
   ngOnInit(): void {
   }
