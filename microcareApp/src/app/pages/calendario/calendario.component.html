@@ -5,11 +5,11 @@
    
     <div class="col-center menu-item-top">
         <div class="row-center">
-            <!-- < añadir -->
+            <mat-icon (click)="prevDay()"svgIcon='arrow-expansion' class='colorGray flecha-izq'></mat-icon>
                 <div class="title">
                     {{fecha}} 
                 </div> 
-                <!-- añadir > -->
+                <mat-icon (click)="nextDay()" svgIcon='arrow-expansion' class='colorGray flecha-dcha'></mat-icon>
         </div>
     </div>
 </div>
