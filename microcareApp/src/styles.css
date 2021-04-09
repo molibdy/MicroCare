@@ -299,3 +299,85 @@ body{
 .footer{
     height: 60px;
 }
+/* /////////// margenes */
+.marginTop10
+{
+    margin-top: 10px;
+}
+.marginTop5
+{
+    margin-top: 5px;
+}
+.marginBottom10
+{
+    margin-bottom: 10px;
+}
+.marginBottom5
+{
+    margin-bottom: 5px;
+}
+.marginLeft32
+{
+    margin-left: 32px;
+    text-align: left;
+    
+}
+.marginLeft12
+{
+    margin-left: 12px;
+    
+}
+.iconSize32
+{
+    height: 32px;
+    width:  32px;
+}
+/* /////////// tamano de texto */
+.textBlueBold28{
+    font-size: 28px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform:none;
+  }
+
+  .textGrayRegular20
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-regular;
+    text-transform:none;
+  }
+  .textBlueSemi20
+  {
+    font-size: 20px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-semibold;
+    text-transform:none;
+  }
+  .textGraySemi20
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-semibold;
+    text-transform:none;
+  }
+  .textGrayBold20
+  {
+    font-size: 20px;
+    color: #B2C1C6;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform:none;
+  }
+  .textBlueBold22
+{
+    font-size: 22px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: none;
+}

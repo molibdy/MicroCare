@@ -73,6 +73,9 @@
           align-items: center;
           justify-content: center;
   }
+  .izquierda{
+    right: -10px;
+  }
   
   .contenedor{
       width:100%;

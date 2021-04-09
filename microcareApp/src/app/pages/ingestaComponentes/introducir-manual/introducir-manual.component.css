@@ -142,6 +142,19 @@
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   padding-left: 20px;
   color: #B2C1C6;
+  font-size: 28px;
+
+}
+.inputGray label
+{
+  text-decoration: none;
+  height: 53px;
+  width: 183px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
+  padding-left: 20px;
+  color: #B2C1C6;
+  font-size: 28px;
 
 }
 
