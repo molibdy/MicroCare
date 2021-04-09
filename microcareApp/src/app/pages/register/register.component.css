@@ -42,3 +42,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+.iconSize{
+    height: 100%;
+    width: 400px;
+  }
