@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BurgerMenuComponent } from './pages/burger-menu/burger-menu.component';
 import { BuscadorRecetasComponent } from './pages/buscador-recetas/buscador-recetas.component';
+import { BarraBuscadorComponent } from './pages/buscador/barra-buscador/barra-buscador.component';
 import { CalendarioComponent } from './pages/calendario/calendario.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 import { FichaGrupoComponent } from './pages/ficha-grupo/ficha-grupo.component';
@@ -28,6 +29,8 @@ const routes: Routes = [
   {path:'anadir', component:IngestaMenuComponent},
   {path:'calendario', component:CalendarioComponent},
 
+  {path:'anadir', component:IngestaMenuComponent},
+  {path:'seleccionarRecetas',component:BarraBuscadorComponent}
 
 ];
 

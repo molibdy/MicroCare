@@ -53,6 +53,11 @@ export class IntroducirManualComponent implements OnInit {
     }
     
   }
+
+  quitarIngrediente(i:number){
+    this.listaIngredientes.splice(i,1)
+
+  }
   registrarIngesta()
   {
     if(this.listaIngredientes.length >0)

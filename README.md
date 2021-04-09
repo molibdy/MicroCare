@@ -6,8 +6,10 @@ Rodri 05/04: Subida register y login + actualizacion de styles
 
 Subida de la version beta del navbar y el repositorio de iconos
 
+Fran 06/4 Menu burguer e inicio intro y tutorial
 
 
+Moli 06/04 9:00 actualización con los módulos de angular-calendar (primera versión sólo llevará week-view en forma de menú)
 
 Moli 06/04 9:00 actualización con los módulos de angular-calendar (primera versión sólo llevará week-view en forma de menú)
 
@@ -24,3 +26,4 @@ Además he subido el componente micronutrient-chart con instrucciones para cuand
 
 Rodri 08/04: Subida de los componentes, botton cruz, botton burger y usuario. Actualizacion de Configuracion, fichas micro y fichas grupo. 
 Me da pete el burger menu.
+FRAN 08/04 17:00 Modulo intro a medias y modulo anadir ingesta y submodulo introducir manual. 

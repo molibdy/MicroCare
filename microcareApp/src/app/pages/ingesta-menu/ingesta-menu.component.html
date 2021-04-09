@@ -12,7 +12,7 @@
  <!--             ///////////// barra menu Burger
  -->                                                            
         
-                </div>
+    </div>
                 <div class="busqueda col-center" >
                     <!--                     //// otro item //// 
  -->  
@@ -42,7 +42,11 @@
                     
                     <div class=" col-center  custom-hr"></div>
 <!--                     //// otro item //// 
+<<<<<<< HEAD
  -->                        <div class=" col-center  menu-item colorWhite" routerLink="../receta">
+=======
+ -->                        <div class=" col-center  menu-item colorWhite" *ngIf="!introducirRecetaBooleano" >
+>>>>>>> fran5
                             <div class="row-left widthMenu" >
                         
                                     <div class="marginLeft32"> 
@@ -50,13 +54,13 @@
                                     </div>
                                     <div class="separadorMenu"></div>
                                     <div class="text20">Seleccionar Recetas</div>
-                  </div>
-                </div>
-                
-                  <div class=" col-center custom-hr"></div>
-                
-<!--                 <div class=" col-center  custom-hr"></div>
- -->                <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
+                            </div>
+                            </div>
+                            <div class=" col-center custom-hr"></div>
+<!--                 //// bara final
+ -->              <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
                 </div>
         </div>
+        <app-favoritos></app-favoritos>
+        
 

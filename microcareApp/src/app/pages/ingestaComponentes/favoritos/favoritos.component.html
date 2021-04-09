@@ -1,0 +1,16 @@
+
+    <div class="col-center iphoneCard">
+        <div class="row-left text widthMenu marginLeft32 ">¿Qué has comido?</div>
+    </div>
+
+    <div class="busqueda col-center">
+        <div>
+            <div class="favoriteCard " *ngFor="let favorito of favoritos; let i = index" [ngClass]="favorito.class">
+                <div class="row-left wrap" >
+                    {{favorito.nombre}}
+                    {{favorito.score}}
+
+                </div>
+            </div>
+        </div>
+    </div>

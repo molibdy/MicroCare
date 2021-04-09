@@ -34,12 +34,12 @@
           <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Ingredientes añadidos:</div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
-            <div class="row-left listaIngredientes">
+            <div class="row-left listaIngredientes relative" >
               <div class=" widthMenu">
                 <div class="row-left">
                   <div>
                     <ol >
-                      <li *ngFor="let ingredient of listaIngredientes" class="textBoldGray">{{ingredient.ingrediente}}, {{ingredient.peso}}</li>
+                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">{{ingredient.ingrediente}}, {{ingredient.peso}} <mat-icon class="absolute iconSizeGray" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
                     </ol>
                 </div>
               
@@ -52,7 +52,7 @@
         -->
         <div></div>
         <div *ngIf="isRecAnadida">
-        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 relative  ">Añadir pasos<mat-icon class="absolute iconSizeGray" svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
+        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 relative">Añadir pasos<mat-icon class="absolute iconSizeGray" svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
             <div class="row-left listaIngredientes">
@@ -86,7 +86,7 @@
         <div class="row-center"><button class="boton-guardar colorDark  dosis-bold  " (click)='registrarIngesta()' *ngIf="!isRecAnadida">Registrar</button></div>
 
         <div class="row-center textGuardarReceta" (click)='switchReceta()' *ngIf='!isRecAnadida'>Guardar como Receta</div>
-        <div class="row-center textGuardarReceta" (click)='registrarReceta(pasos,nombreReceta,Imagenurl)' *ngIf='isRecAnadida' routerLink="./">Guardar Receta</div>
+        <div class="row-center textGuardarReceta" (click)='registrarReceta(pasos,nombreReceta,Imagenurl)' *ngIf='isRecAnadida' routerLink="../">Guardar Receta</div>
       </form>
 
 <!-- /////////////// anadir favorito -->

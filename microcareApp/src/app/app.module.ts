@@ -37,6 +37,9 @@ import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
 import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
+import { BarraBuscadorComponent } from './pages/buscador/barra-buscador/barra-buscador.component';
+import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favoritos.component';
+
 
 
 @NgModule({
@@ -64,9 +67,13 @@ import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
     IntroducirManualComponent,
     VistaRecetaComponent,
     MicroScoreComponent,
+    
+    
     BottonBurgerComponent,
     BottonCruzComponent,
     UsuarioComponent,
+    BarraBuscadorComponent,
+    FavoritosComponent,
   
   ],
   imports: [
