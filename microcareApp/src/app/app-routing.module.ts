@@ -14,6 +14,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PreferenciasComponent } from './pages/preferencias/preferencias.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -37,6 +38,7 @@ const routes: Routes = [
   {path:'menu/preferencias', component:PreferenciasComponent},
 
 
+  {path:'receta', component:VistaRecetaComponent},
 ];
 
 @NgModule({

@@ -29,7 +29,7 @@
                   <input type="number"  #peso>
               </div>
           </div>
-          <div class="row-center"><button class="boton-anadir colorWhite dosis-bold backgroundGray " (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'>Añadir</button></div>
+          <div class="row-center"><button class="boton-anadir colorWhite dosis-bold backgroundGray " (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'><mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></button></div>
 
           <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Ingredientes añadidos:</div>
 
