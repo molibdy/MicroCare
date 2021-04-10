@@ -6,6 +6,15 @@
     width: 340px;
 
 }
+.textBlueSemi22
+{
+
+  text-align: left;
+
+}
+.separador{
+  width: 55%;
+}
 .menu-item-expandible
 {
     width: 287px;
@@ -26,6 +35,12 @@
   .textBoldGray{
     font-size: 18px;
     color: #B2C1C6;
+    font-family: dosis-bold;
+    padding: 5px 0 5x 0;
+  }
+  .textsemiGray{
+    font-size: 18px;
+    color: #667a92;
     font-family: dosis-bold;
     padding: 10px 0 10px 0;
   }
@@ -74,10 +89,10 @@
 }
 .boton-anadir
 {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 40px;
   text-decoration:none;
-  border-radius:50%;
+  border-radius:15%;
   border:solid 0px #87ffff;
   background-color: #B2C1C6;
   justify-content: center; 
@@ -121,39 +136,46 @@
 }
 .inputGray
 {
-  background-color: rgb(255, 255, 255);
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   margin-bottom: 20px;
-  text-decoration: none;
-  width: 123px;
+  width: 173px;
   position: relative;
-  color: #B2C1C6;
+  border:none;
+  outline: none;
+  text-decoration: none;
+  margin: 0px;
 
+}
+.width200{
+  width: 200px;
 }
 .inputGray input
 {
   text-decoration: none;
-  height: 53px;
-  width: 123px;
+  height: 30px;
+  width: 143px;
   border-radius: 20px;
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
-  padding-left: 20px;
-  color: #B2C1C6;
-  font-size: 28px;
+  padding-left: 10px;
+  color: #667a92;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-family: dosis-medium ;
+
 
 }
 .inputGray label
 {
   text-decoration: none;
-  height: 53px;
+  height: 33px;
   width: 123px;
   border-radius: 20px;
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   padding-left: 20px;
-  color: #B2C1C6;
-  font-size: 28px;
+  color: #667a92;
+  font-size: 22px;
+  outline: none;
+
 
 }
 
@@ -262,3 +284,10 @@ input::-webkit-inner-spin-button {
     height: 24px;
     width: 24px;
 }
+.custom-hr-2
+{
+    width: 320px;
+    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
+    position: relative;
+    align-self: center;
+    padding: 10px 0 10px 0;}

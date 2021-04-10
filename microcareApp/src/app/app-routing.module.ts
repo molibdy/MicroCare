@@ -45,7 +45,7 @@ const routes: Routes = [
   {path:'intro2', component:Intro2Component},
   {path:'intro3', component:Intro3Component},
   {path:'intro4', component:Intro4Component},
-  {path:'preferencias', component:PreferenciasComponent},
+  {path:'menu/preferencias', component:PreferenciasComponent},
 ];
 
 

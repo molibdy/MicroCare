@@ -3,8 +3,8 @@
     </div>
 
     <div class=" row-left-wrap">
-            <div class="favoriteCard  col-center textBlueSemi20" *ngFor="let favorito of favoritos; let i = index" [ngClass]="favorito.class" (click)="anadirFavorito(i)">
-               
+            <div class="favoriteCard  col-center textBlueSemi20 relative" *ngFor="let favorito of favoritos; let i = index" [ngClass]="favorito.class" (click)="anadirFavorito(i)">
+                <mat-icon class=" iconSizeGray posicionCerrar " svgIcon='close' (click)='cerrarPasos()'></mat-icon>
                     {{favorito.nombre}}
                     {{favorito.score}}
 

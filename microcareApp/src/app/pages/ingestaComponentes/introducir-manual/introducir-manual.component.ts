@@ -40,13 +40,14 @@ export class IntroducirManualComponent implements OnInit {
 
   crearIngrediente(ingrediente : string, peso:number)
   {
-    if(ingrediente.length==0 || peso ==0){
+    if(ingrediente.length > 0 && peso > 0){
       console.log(ingrediente);
       console.log("pasa");
+      this.listaIngredientes.push({ingrediente: ingrediente, peso : peso})
+
 
     }
     else{
-      this.listaIngredientes.push({ingrediente: ingrediente, peso : peso})
       console.log(this.listaIngredientes);
       console.log("hey");
       

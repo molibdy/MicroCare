@@ -3,36 +3,52 @@
 <div class="col-center busqueda">
 <!--   ////// primera parte del menu ingesta sin hidden
  -->  <div *ngIf="!hiddenIngesta">
-        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 "><div>Introduce los alimentos que has consumido</div></div>
+        <div class="row-left textBoldGray  menu-item-expandible marginLeft12 marginTop10 "><div>Introduce los alimentos que has consumido</div></div>
 
-        <div class="menu-item-expandible">
-        <form class="example-form">
-          <mat-form-field class="example-full-width">
-            <mat-label class="inputGray">Ingrediente</mat-label>
-            <input type="text"
-                  placeholder="Pick one"
-                  aria-label="Number"
-                  matInput
-                  [formControl]="myControl"
-                  [matAutocomplete]="auto"
-                  class="textBoldGray inputgray" #ingrediente>
-            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" >
-              <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                {{option}}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-          <div class="row-left widthMenu menu-item-expandible colorGray">
-              <div class=" marginRight10 text20Gray height100">Cantidad</div>
-              <div class="row-left inputGray ">
-                  <p class="absolute text20Gray" style="text-transform: none; top: 15px;">g</p>
-                  <input type="number"  #peso>
-                  <div class="row-center" (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'><button class="boton-anadir colorWhite dosis-bold backgroundGray marginleft10" ><mat-icon class=" iconSizeGrayAdd  " svgIcon='add' ></mat-icon></button></div>
+        <div class=" custom-hr-2"></div>
 
-              </div>
+
+        <div class="">
+          <div class="col-center">
+            <div class="row-left  ">
+              <div class="col-left" >
+                <form class=" inputGray">
+                  <mat-form-field class=" " appearance="none">
+                    <div class="    colorGray">
+                      <div class="textBlueSemi20 marginBottom10 marginLeft12">Ingredientes</div>
+
+                        <input type="text"
+                                placeholder="Escoge uno"
+                                aria-label="Number"
+                                matInput
+                                [formControl]="myControl"
+                                [matAutocomplete]="auto"
+                                class=" inputgray" #ingrediente>
+                          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" >
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                              {{option}}
+                            </mat-option>
+                          </mat-autocomplete>
+                    </div>
+                  </mat-form-field>
+                  </form>
+                </div>
+              
+                <div class="col-left widthMenu  colorGray">
+                    <div class=" marginRight10 textBlueSemi20 marginBottom10">Cantidad</div>
+                    <div class="row-left inputGray ">
+                        <p class="absolute text20Gray" style="text-transform: none; right: 30px;" >g</p>
+                        <input type="number"  #peso class="inputgray">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row-right" (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)' ><button class="boton-anadir colorWhite dosis-bold backgroundGray marginleft10" ><mat-icon class=" iconSizeGrayAdd  " svgIcon='add' ></mat-icon></button></div>
+
           </div>
+          <div class=" custom-hr-2"></div>
 
-          <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Alimentos consumidos:</div>
+               <div class="row-left textBoldGray  menu-item-expandible marginLeft12 ">Alimentos consumidos:</div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
             <div class="row-left listaIngredientes relative" >
@@ -40,7 +56,7 @@
                 <div class="row-left">
                   <div>
                     <ol >
-                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">Ingrediente: {{ingredient.ingrediente}} Peso: {{ingredient.peso | gramos}}  <mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
+                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textsemiGray">Ingrediente: {{ingredient.ingrediente}} Peso: {{ingredient.peso | gramos}}  <mat-icon class="absolute iconSizeGray " svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
                     </ol>
                 </div>
               
@@ -53,7 +69,7 @@
         -->
         <div></div>
         <div *ngIf="isRecAnadida">
-        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 relative">Añadir pasos<mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
+        <div class="row-left textBoldGray  menu-item-expandible marginLeft12 relative">Añadir pasos<div class="separador"></div><mat-icon class=" iconSizeGray " svgIcon='close' (click)='cerrarPasos()'></mat-icon></div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
             <div class="row-left listaIngredientes">
@@ -69,10 +85,10 @@
               
             </div>
         </div>
-        <div class="row-left widthMenu menu-item-expandible colorGray">
+        <div class="row-left widthMenu menu-item-expandible colorGray" >
           <div class=" marginRight10 textBoldGray height100">Nombre</div>
           <div class="row-left inputGray ">
-              <input type="text"  #nombreReceta placeholder="Ponle nombre a tu receta">
+              <input type="text"  #nombreReceta placeholder="Ponle nombre a tu receta" >
           </div>
       </div>
       <div class="row-left widthMenu menu-item-expandible colorGray">
@@ -84,11 +100,10 @@
     </div>
         </div>
 
-        <div class="row-center"><button class="boton-guardar colorDark  dosis-bold  " (click)='registrarIngesta()' *ngIf="!isRecAnadida">Registrar</button></div>
+        <div class="row-center"><button class="button-blue colorDark  dosis-bold  " (click)='registrarIngesta()' *ngIf="!isRecAnadida">Registrar</button></div>
 
         <div class="row-center textGuardarReceta" (click)='switchReceta()' *ngIf='!isRecAnadida'>Guardar como Receta</div>
         <div class="row-center textGuardarReceta" (click)='registrarReceta(pasos,nombreReceta,Imagenurl)' *ngIf='isRecAnadida' routerLink="../">Guardar Receta</div>
-      </form>
 
 <!-- /////////////// anadir favorito -->
     </div>
@@ -98,9 +113,11 @@
         <div  *ngIf="hiddenIngesta">
           <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">¿Guardar cómo favorito?</div>
             <div class=" widtMenu">
-                <div class="row-left inputGrayFavorito ">
+              <div class="col-left">
+                
                   <input type="text"  #nombreReceta placeholder="Nombre">
               </div>
+               
             
               </div>
               <div class="row-center marginBottom10">

@@ -41,3 +41,17 @@
       text-transform: capitalize;
   }
 
+  .posicionCerrar{
+      position: absolute;
+      top: -5px;
+      right: -5px;
+  }
+  .relative{
+      position: relative;
+  }
+  .iconSizeGray
+  {
+      height: 18px;
+      width: 18px;
+      color: #B2C1C6;
+  }

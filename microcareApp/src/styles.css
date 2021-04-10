@@ -388,3 +388,17 @@ body{
     font-family: dosis-bold;
     text-transform: none;
 }
+.textBlueSemi20{
+    color: #667a92;
+   
+    font-size: 18px;
+    font-family: dosis-semibold ;
+}
+.custom-hr
+{
+    width: inherit;
+    border-bottom: solid 2px rgba(178, 193, 198, 0.185); 
+    position: relative;
+    align-self: center;
+    
+}
