@@ -3,7 +3,7 @@
 <div class="col-center busqueda">
 <!--   ////// primera parte del menu ingesta sin hidden
  -->  <div *ngIf="!hiddenIngesta">
-        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Añadir ingrediente:</div>
+        <div class="row-left textBoldGray  menu-item-expandible marginLeft32 "><div>Introduce los alimentos que has consumido</div></div>
 
         <div class="menu-item-expandible">
         <form class="example-form">
@@ -25,13 +25,14 @@
           <div class="row-left widthMenu menu-item-expandible colorGray">
               <div class=" marginRight10 text20Gray height100">Cantidad</div>
               <div class="row-left inputGray ">
-                  <p class="absolute text20Gray" style="text-transform: none; top: 15px;">gramos</p>
+                  <p class="absolute text20Gray" style="text-transform: none; top: 15px;">g</p>
                   <input type="number"  #peso>
+                  <div class="row-center" (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'><button class="boton-anadir colorWhite dosis-bold backgroundGray marginleft10" ><mat-icon class=" iconSizeGrayAdd  " svgIcon='add' ></mat-icon></button></div>
+
               </div>
           </div>
-          <div class="row-center"><button class="boton-anadir colorWhite dosis-bold backgroundGray " (click)='crearIngrediente(ingrediente.value, peso.valueAsNumber)'><mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></button></div>
 
-          <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Ingredientes añadidos:</div>
+          <div class="row-left textBoldGray  menu-item-expandible marginLeft32 ">Alimentos consumidos:</div>
 
           <div class="row-left widthMenu menu-item-expandible colorGray">
             <div class="row-left listaIngredientes relative" >
@@ -39,7 +40,7 @@
                 <div class="row-left">
                   <div>
                     <ol >
-                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">Ingrediente: {{ingredient.ingrediente}},  Peso: {{ingredient.peso}} gramos <mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
+                      <li *ngFor="let ingredient of listaIngredientes; let i = index" class="textBoldGray">Ingrediente: {{ingredient.ingrediente}} Peso: {{ingredient.peso | gramos}}  <mat-icon class="absolute iconSizeGray izquierda" svgIcon='close' (click)='quitarIngrediente(i)'></mat-icon></li>
                     </ol>
                 </div>
               

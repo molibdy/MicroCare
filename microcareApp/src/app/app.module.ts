@@ -43,6 +43,7 @@ import { Intro1Component } from './pages/intro1/intro1.component';
 import { Intro2Component } from './pages/intro2/intro2.component';
 import { Intro3Component } from './pages/intro3/intro3.component';
 import { Intro4Component } from './pages/intro4/intro4.component';
+import { GramosPipe } from './pipes/gramos.pipe';
 
 
 
@@ -82,6 +83,7 @@ import { Intro4Component } from './pages/intro4/intro4.component';
     Intro2Component,
     Intro3Component,
     Intro4Component,
+    GramosPipe,
   
   ],
   imports: [
