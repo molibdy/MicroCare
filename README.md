@@ -30,4 +30,6 @@ FRAN 08/04 17:00 Modulo intro a medias y modulo anadir ingesta y submodulo intro
 
 FRAN 09/04 17:00 Modulo anadir ingesta al 80% y submodulo introducir manual arreglado, version 60% burger menu
 
+Fran 10/04 Creada Pipe Gramos, menu burger terminado, menu preferencias al 90%
+
 

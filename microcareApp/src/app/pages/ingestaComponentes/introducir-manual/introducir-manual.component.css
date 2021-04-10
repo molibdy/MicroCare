@@ -74,15 +74,14 @@
 }
 .boton-anadir
 {
-  width: 120px;
-  height: 54px;
+  width: 60px;
+  height: 60px;
   text-decoration:none;
-  border-radius:20px;
+  border-radius:50%;
   border:solid 0px #87ffff;
   background-color: #B2C1C6;
   justify-content: center; 
   text-align:center;
-  padding:10px 20px;
   font-size: 22px;
 }
 
@@ -128,7 +127,7 @@
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   margin-bottom: 20px;
   text-decoration: none;
-  width: 183px;
+  width: 123px;
   position: relative;
   color: #B2C1C6;
 
@@ -137,7 +136,7 @@
 {
   text-decoration: none;
   height: 53px;
-  width: 183px;
+  width: 123px;
   border-radius: 20px;
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   padding-left: 20px;
@@ -149,7 +148,7 @@
 {
   text-decoration: none;
   height: 53px;
-  width: 183px;
+  width: 123px;
   border-radius: 20px;
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   padding-left: 20px;
@@ -166,24 +165,14 @@
 {
   color: #B2C1C6;
 }
-.inputGrayFavorito
-{
-  background-color: rgb(255, 255, 255);
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
-  margin-bottom: 20px;
-  text-decoration: none;
-  width: 287px;
-  position: relative;
-  color: #B2C1C6;
 
-}
 .inputGrayFavorito input
 {
   text-decoration: none;
-  height: 53px;
-  width: 273px;
+  background-color: rgb(255, 255, 255);
+
+  height: 100px;
+  width: inherit;
   border-radius: 20px;
   box-shadow: 1px 3px 8px rgba(84, 0, 0, 0.1);
   padding-left: 20px;
@@ -267,4 +256,9 @@ input::-webkit-inner-spin-button {
 {
     height: 18px;
     width: 18px;
+}
+.iconSizeGrayAdd
+{
+    height: 24px;
+    width: 24px;
 }

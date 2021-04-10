@@ -1,7 +1,7 @@
 
 
 <div class="col-center">
-    <div class="col-center 100 iphoneCard">
+    <div class="col-center  iphoneCard">
     <div class="header">
         <div class="row-center text"><mat-icon class="colorBlue icono left-padding" true svgIcon="configuracion"></mat-icon>Preferencias</div>
     </div>
@@ -10,12 +10,13 @@
  <!--             ///////////// barra menu Burger
  -->                             
                 
-                <div class="busqueda">
+                <div class=" relative" [ngClass]="desplegable3 == true ? 'busqueda-grande' : 'busqueda' ">
                     <!-- 1 -->
                     <app-botton-cruz></app-botton-cruz>
 
-                    <div (click)="pulsar1()" class="col-left menu-item-arriba colorWhite">
-                        <div class="text">Preferencias de Dieta <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    <div (click)="pulsar1()" class="row-left menu-item-arriba  colorWhite ">
+                        <div class="textBlueSemi22 marginLeft10">¿Prefieres una dieta vegetariana? </div>
+                        <mat-icon class="row-right  iconSize22 flechaMarginRight colorGray flechaMarginRight" svgIcon="flecha-desplegable"></mat-icon>
                     </div>
                     <div class=" custom-hr"></div>
 
@@ -25,36 +26,99 @@
                             <div [ngClass]="chip2" (click)="azul2()">vegano</div>
                         </div>
                     </div>
-                    <!-- 2 -->
-                    <div (click)="pulsar2()" class="col-left menu-item colorWhite">
-                        <div class="text" >Alergias <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
-                    </div>
                     <div class=" custom-hr"></div>
 
-                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable2">
-                        <div class="text colorWhite">
+                    <!-- 2 -->
+                    <div (click)="pulsar2()" class="row-left menu-item colorWhite ">
+                        <div class="textBlueSemi22 marginLeft10">¿Tienes alergia a algún alimento?</div>
+                            <div class="separadorMenue"></div>
+                        <mat-icon class="row-right  iconSize22 flechaMarginRight colorGray" svgIcon="flecha-desplegable"></mat-icon>
+                    </div>
+
+                    <div class=" custom-hr"></div>
+
+                    <div class="colorWhite " *ngIf="desplegable2">
+
+
+
+
+                        <div class="col-center  width300 ">
+                            <mat-form-field class="example-chip-list inputGrayFavorito " appearance="none">
+                                <mat-chip-list #chipAlergias >
+                                    <input
+                                    placeholder="New fruit..."
+                                    #alergiaInput
+                                    [formControl]="alergiasCtrl"
+                                    [matAutocomplete]="auto1"
+                                    [matChipInputFor]="chipAlergias"
+                                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                  placeholder="Elige por grupo de alergenos" class="textInputs ">
+                                <mat-chip
+                                    *ngFor="let alergia of alergias; let i = index"
+                                    [selectable]="selectable"
+                                    [removable]="removable"
+                                    (removed)="remove2(alergia)"  class="chip-alergia">
+                                    <mat-icon [svgIcon]='alergias[i]'></mat-icon>
+                                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                </mat-chip>
+                                
+                                </mat-chip-list>
+                                <mat-autocomplete #auto1="matAutocomplete" (optionSelected)="selected2($event)">
+                                <mat-option *ngFor="let alergia of filteredAlergias | async" [value]="value">
+                                    {{alergia}}
+                                </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field>                           
+
 
                         </div>
+
+
+
+                       
+                        <div class=" custom-hr"></div>
+
                     </div>
                     <!-- 3 -->
-                    <div (click)="pulsar3()" class="col-left menu-item colorWhite">
-                        <div class="text">Alimentos a evitar<mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
+                    <div (click)="pulsar3()" class="col-left  colorWhite" [ngClass]="desplegable3 ? 'menu-item' : 'menu-item-abajo' ">
+                        <div class="textBlueSemi22 marginLeft10">¿Hay alimentos que no te gustan? </div>
+                        <mat-icon class="row-right  iconSize22 flechaMarginRight colorGray flechaMarginRight" svgIcon="flecha-desplegable"></mat-icon>
                     </div>
                     <div class=" custom-hr"></div>
-                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable3">
-                        <div class="text colorWhite">
-
+                    <div class="colorWhite border-abajo" *ngIf="desplegable3">
+                        <div class="col-center width300">
+                        
+                            <mat-form-field class="example-chip-list" appearance="none">
+                                <mat-chip-list #chipFruits aria-label="Fruit selection">
+                                <mat-chip
+                                    *ngFor="let fruit of fruits"
+                                    [selectable]="selectable"
+                                    [removable]="removable"
+                                    (removed)="remove(fruit)"  class="chip-material">
+                                    {{fruit}}
+                                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                </mat-chip>
+                                <input
+                                    placeholder="New fruit..."
+                                    #fruitInput
+                                    [formControl]="fruitCtrl"
+                                    [matAutocomplete]="auto"
+                                    [matChipInputFor]="chipFruits"
+                                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                    placeholder="Alimentos que no te gustan" class="textInputs">
+                                </mat-chip-list>
+                                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                                <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+                                    {{fruit}}
+                                </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field>
                         </div>
+                        <div class=" custom-hr"></div>
+
                     </div>
                     <!-- 4 -->
-                    <div (click)="pulsar4()" class="col-left menu-item-abajo colorWhite">
-                        <div class="text">Suplementos <mat-icon class="iconSize flecha colorGray" svgIcon="flecha-desplegable"></mat-icon></div>
-                    </div>
-                    <div class=" custom-hr"></div>
-                    <div class="menu-desplegable col-left colorWhite" *ngIf="desplegable4">
-                        <div class="text colorWhite">
-                        </div>
-                    </div>
+
                 </div>
 
             </div>

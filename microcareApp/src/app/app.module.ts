@@ -39,6 +39,7 @@ import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.componen
 import { MicroScoreComponent } from './pages/micro-score/micro-score.component';
 import { BarraBuscadorComponent } from './pages/buscador/barra-buscador/barra-buscador.component';
 import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favoritos.component';
+import { GramosPipe } from './pipes/gramos.pipe';
 
 
 
@@ -74,6 +75,7 @@ import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favorit
     UsuarioComponent,
     BarraBuscadorComponent,
     FavoritosComponent,
+    GramosPipe,
   
   ],
   imports: [

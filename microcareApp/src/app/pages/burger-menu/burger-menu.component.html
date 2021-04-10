@@ -5,20 +5,18 @@
         <app-usuario></app-usuario>
         <div class="row-left text widthMenu marginLeft32 ">Menu</div>
 
-                        <div class="busqueda col-center" >
+        <div class="busqueda col-center" >
+            <app-barra-buscador (click)=buscadorSwitch()></app-barra-buscador>
 
         
                             
-                            <div class=" col-center menu-item-expandible colorWhite" >
-                                <div class="row-left widthMenu" >
-                                    
-        
-                             </div>
-                            </div>
+     
                             
                             <div class=" col-center  custom-hr"></div>
         <!--                     //// otro item //// 
-         -->                        <div class=" col-center  menu-item colorWhite"  routerLink="../dia" >
+
+         -->                        
+                    <div class=" col-center  menu-item colorWhite"  routerLink="../dia" >
                                     <div class="row-left widthMenu" >
                                 
                                             <div class="marginLeft32"> 
@@ -31,7 +29,7 @@
                         
                           <div class=" col-center custom-hr"></div>
                                   <!--                     //// otro item //// 
-                            -->                        <div class=" col-center  menu-item colorWhite"  routerLink="../buscar-receta" >
+                            --><div class=" col-center  menu-item colorWhite"  routerLink="../buscar-receta" >
                                 <div class="row-left widthMenu" >
                                                     
                                     <div class="marginLeft32"> 
@@ -58,7 +56,8 @@
                         
         <!--                 <div class=" col-center  custom-hr"></div>
          -->                <div class=" col-center  custom-hr" style="width: 90%; justify-content: center; bottom: 0.5px;" ></div>
-                        </div>
-         </div>
-         </div>
+                </div> 
+                        
+    </div>
+</div>
         

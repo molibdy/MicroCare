@@ -349,13 +349,21 @@ body{
     font-family: dosis-regular;
     text-transform:none;
   }
-  .textBlueSemi20
+  .textBlueRegular22
   {
     font-size: 20px;
     color: #667a92;
     text-align: center;
-    font-family: dosis-semibold;
+    font-family: dosis-regular;
     text-transform:none;
+  }
+  .textBlueSemi22
+  {
+    font-size: 22px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-semibold;
+    text-transform:unset;
   }
   .textGraySemi20
   {
