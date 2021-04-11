@@ -1,4 +1,11 @@
-{
+{"scripts": {
+  "start": "node microcareApp/server.js",
+  "ng": "ng",
+  "build": "ng build",
+  "test": "ng test",
+  "lint": "ng lint",
+  "e2e": "ng e2e"
+},
   "dependencies": {
     "material": "^0.4.3"
   },
