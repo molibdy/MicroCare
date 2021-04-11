@@ -7,8 +7,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {startWith} from 'rxjs/operators';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
-
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const materialModules = [
   MatIconModule
@@ -22,7 +22,9 @@ const materialModules = [
      materialModules,
      MatInputModule,
      MatFormFieldModule,
-     MatAutocompleteModule
+     MatAutocompleteModule,
+     MatDatepickerModule,
+     MatSnackBarModule
 
        ],
    exports: [
@@ -30,7 +32,9 @@ const materialModules = [
      materialModules,
      MatInputModule,
      MatFormFieldModule,
-     MatAutocompleteModule
+     MatAutocompleteModule,
+     MatDatepickerModule,
+     MatSnackBarModule
      
 
      

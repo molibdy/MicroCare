@@ -29,8 +29,8 @@ import { IntroComponent } from './pages/intro/intro.component';
 import { IngestaMenuComponent } from './pages/ingesta-menu/ingesta-menu.component';
 import { IntroducirManualComponent } from './pages/ingestaComponentes/introducir-manual/introducir-manual.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
-
-
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import { MatNativeDateModule } from '@angular/material/core';
 
 import { BottonBurgerComponent } from './pages/botton-burger/botton-burger.component';
 import { BottonCruzComponent } from './pages/botton-cruz/botton-cruz.component';
@@ -85,7 +85,9 @@ import { FavoritosComponent } from './pages/ingestaComponentes/favoritos/favorit
     FormsModule,
     NgApexchartsModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatDatepickerModule,
+    MatNativeDateModule
 
     
 

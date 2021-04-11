@@ -35,7 +35,7 @@ export class MicroScoreComponent implements OnInit {
       series: [
         {
           name: "basic",
-          data: [400, 430, 448, 470,100, 200],
+          data: [40, 43, 60, 53,90, 80],
 
         }
       ],
@@ -44,7 +44,7 @@ export class MicroScoreComponent implements OnInit {
       },
       chart: {
         type: "bar",
-        height: "220px",
+        height: "210px",
         width:"320px",
         fontFamily: "dosis-regular",
         foreColor: "#667a92",
@@ -66,6 +66,7 @@ export class MicroScoreComponent implements OnInit {
           horizontal: true,
           barHeight: '80%',
           distributed:true,
+          borderRadius: 4
         }
       },
       legend:{
