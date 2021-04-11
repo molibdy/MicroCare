@@ -10,21 +10,25 @@
                 <div class="iphoneCard " >
                     <!--                     //// otro item //// 
  -->  
-                        <div class="col-center menu-item ">
-                            <div class="row-left  widthMenu100" >
+                        <div class="col-right-buscar menu-item ">
+                            <div class="row-left  widthMenu100 relative" >
                                 
                                             <div class="marginLeft32"> 
                                                 <mat-icon class="iconSize colorBlue" svgIcon="search"></mat-icon>
                                             </div>
                                             <div class="separadorMenu"></div>
                                             <div class="buscarNavbar ">
-                                                <input  [(ngModel)]='inputSearch' class="text fontAwesome marginLeft32 " placeholder="buscar">
+                                                <input  [(ngModel)]='inputSearch' class="text  marginLeft32 " placeholder="buscar" >
                                            </div>
                                             <div class="separadorMenu"></div>
                                             
 
                             </div>
+                                                                            
+                            <div  class="absolutePressEnter marginRight32 textGraySemi20 " [ngClass]="inputSearch.length > 0 ? 'visible' : 'invisible'"> press enter <mat-icon svgIcon="enter" style="width: 20px;"></mat-icon></div>
+          
                         </div>
+
                         <div class="custom-hr"></div>
 <!--                         /////// elemento micronutriente
 

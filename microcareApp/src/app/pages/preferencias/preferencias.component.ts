@@ -12,6 +12,10 @@ import {map, startWith} from 'rxjs/operators';
   templateUrl: './preferencias.component.html',
   styleUrls: ['./preferencias.component.css']
 })
+
+
+///////// clase preferencias 
+
 export class PreferenciasComponent implements OnInit {
   public inputText:string = ""
   public foco:boolean = false
@@ -23,6 +27,12 @@ export class PreferenciasComponent implements OnInit {
   public desplegable4: boolean = false
   public chip1:string ="chip-grande"
   public chip2:string ="chip-grande"
+
+/////// Guardar Alimentos excluidos
+
+  public alimentosQueNo:string[]
+  public isVegetariano:boolean = false
+  public isVegano:boolean = false
 
 
   ///// material autocomplete 
@@ -64,10 +74,10 @@ export class PreferenciasComponent implements OnInit {
   this.filteredAlergias = this.alergiasCtrl.valueChanges.pipe(
       startWith(null),
       map((alergia: string | null) => alergia ? this._filter2(alergia) : this.totalAlergias.slice()));
-  
-   
 
 }
+
+/// funciones movimiento rodri
   pulsar1(){
     if(this.desplegable1){
     this.desplegable1=false
@@ -121,11 +131,11 @@ export class PreferenciasComponent implements OnInit {
       this.chip2 ="chip-grande"
     }
    }
-
+////////////////////////////////
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
-
+/////////// metodos autocompletar
 
   add(event: MatChipInputEvent): void {
     const input = event.input;
@@ -203,6 +213,27 @@ export class PreferenciasComponent implements OnInit {
     return this.totalAlergias.filter(alergia => alergia.toLowerCase().indexOf(filterValue) === 0);
   }
 
+
+  /// metodos recogida de datos
+
+  guardarPreferencias(){
+    if(this.isVegano){
+
+    }
+    if(this.isVegetariano){
+
+    }
+    
+
+  }
+  preferenciasDieta(i){
+    if(i == 1){
+      this.isVegetariano = true
+    }
+    if(i==2){
+      this.isVegano = true
+    }
+  }
   
   
 

@@ -141,12 +141,31 @@
     font-family: dosis-bold;
     text-transform: none;
 }
+.absolutePressEnter{
+    bottom: 0px;
+    
+}
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
+.col-right-buscar{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    /* align-self: right; */
+    align-items:flex-end;   /* alinea elementos verticalmente a la derecha */
+    /* justify-items:right; */
+    justify-content: flex-end;  /* sitúa elementos en la parte superior de la columna */
+}
 
 /* ////////// inputs  */
 .buscarNavbar input
 {
     box-sizing: border-box;
-    height: 100px;
+    height: inherit;
     width: 180px;
     border:none;
     font-size: 28px;

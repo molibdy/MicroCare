@@ -34,3 +34,5 @@ Fran 10/04 Creada Pipe Gramos, menu burger terminado, menu preferencias al 90%
 
 
 Moli 11/04 10:00 Componente "vista receta" con botones "añadir al plan" y "¡consumida!"
+
+Fran 11/04 18:30 Componente favoritos terminado
