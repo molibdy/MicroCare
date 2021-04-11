@@ -27,14 +27,16 @@ export class IntroducirManualComponent implements OnInit {
   public recetas:object[] = []
   public isRecAnadida:boolean = false
   public hiddenIngesta:boolean = false;
+
+  public showGuardarFavorito:boolean=false;
   constructor() { }
   
-  ngOnInit() {this.filteredOptions = this.myControl.valueChanges.pipe(
+  ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges.pipe(
     startWith(''),
     map(value => this._filter(value))
-    
-  );
-  console.log(this.filteredOptions);
+    );
+    console.log(this.filteredOptions);
 
   }
 
@@ -96,6 +98,10 @@ export class IntroducirManualComponent implements OnInit {
     return this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
   }
 
+
+  public guardarFavorito(){
+    this.showGuardarFavorito=true
+  }
 
 ///////// Recogida de datos //////////////
 

@@ -37,3 +37,6 @@ Moli 11/04 10:00 Componente "vista receta" con botones "añadir al plan" y "¡co
 
 
 Rodri 11/04 Cambio del buscador de buscar recetas se añaden las primeras tarjetas
+Fran 11/04 18:30 Componente favoritos terminado
+
+Moli 11/04 18:30 Componente "introducir manual" re-estructurado y con botón de registrar. Botón de "guardar como favorito" en proceso

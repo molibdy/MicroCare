@@ -302,6 +302,9 @@ body{
 {
     margin-top: 10px;
 }
+.marginTop22{
+    margin-top: 22px;
+}
 .marginTop5
 {
     margin-top: 5px;
@@ -323,6 +326,16 @@ body{
 .marginLeft12
 {
     margin-left: 12px;
+    
+}
+.marginRight32
+{
+    margin-right: 32px;
+    
+}
+.marginRight12
+{
+    margin-right: 12px;
     
 }
 .iconSize32
@@ -446,3 +459,13 @@ body{
     font-family: dosis-semibold;
     text-transform:none;
   }
+
+
+  .textBlueRegular16
+{
+  font-size: 16px;
+  color: #667a92;
+  text-align: center;
+  font-family: dosis-regular;
+  text-transform:none;
+}

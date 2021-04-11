@@ -22,8 +22,8 @@
 
                     <div class="colorWhite" *ngIf="desplegable1">
                         <div class="text row-center">
-                            <div [ngClass]="chip1" (click)="azul1()">vegetariano</div>
-                            <div [ngClass]="chip2" (click)="azul2()">vegano</div>
+                            <div [ngClass]="chip1" (click)="azul1()" (click)="preferenciasDieta(1)">vegetariano</div>
+                            <div [ngClass]="chip2" (click)="azul2()" (click)='preferenciasDieta(2)'>vegano</div>
                         </div>
                     </div>
                     <div class=" custom-hr"></div>
@@ -124,7 +124,7 @@
                     <!-- 4 -->
 
                 </div>
-
+<div class="button-blue marginTop22" (click)="guardarPreferencias()">guardar preferencias</div>
             </div>
 
         </div>

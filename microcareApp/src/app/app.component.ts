@@ -58,6 +58,7 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon("sesamo",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos2/sesame.svg"));
     this.matIconRegistry.addSvgIcon("sulfitos",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos2/sulfito.svg"));
     this.matIconRegistry.addSvgIcon("altramuces",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/alergenos2/lupin.svg"));
+    this.matIconRegistry.addSvgIcon("enter",this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/svg/Asset2.svg"));
 
 
     
