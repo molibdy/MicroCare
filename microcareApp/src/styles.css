@@ -402,3 +402,48 @@ body{
     align-self: center;
     
 }
+.textBlueBold20
+{
+    font-size: 20px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-bold;
+    text-transform: none;
+}
+
+.textGraySemi16
+{
+  font-size: 16px;
+  color: #B2C1C6;
+  text-align: center;
+  font-family: dosis-semibold;
+  text-transform:none;
+}
+
+
+.textGrayRegular16
+{
+  font-size: 16px;
+  color: #B2C1C6;
+  text-align: center;
+  font-family: dosis-regular;
+  text-transform:none;
+}
+
+.textBlueRegular14
+{
+  font-size: 14px;
+  color: #667a92;
+  text-align: center;
+  font-family: dosis-regular;
+  text-transform:none;
+}
+
+.textBlueSemi18
+  {
+    font-size: 18px;
+    color: #667a92;
+    text-align: center;
+    font-family: dosis-semibold;
+    text-transform:none;
+  }

@@ -33,3 +33,4 @@ FRAN 09/04 17:00 Modulo anadir ingesta al 80% y submodulo introducir manual arre
 Fran 10/04 Creada Pipe Gramos, menu burger terminado, menu preferencias al 90%
 
 
+Moli 11/04 10:00 Componente "vista receta" con botones "añadir al plan" y "¡consumida!"

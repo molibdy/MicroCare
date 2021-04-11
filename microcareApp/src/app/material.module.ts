@@ -11,6 +11,8 @@ import {MatChipsModule} from '@angular/material/chips';
 
 
 
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const materialModules = [
   MatIconModule
@@ -25,8 +27,10 @@ const materialModules = [
      MatInputModule,
      MatFormFieldModule,
      MatAutocompleteModule,
-     MatChipsModule
+     MatChipsModule,
      
+     MatDatepickerModule,
+     MatSnackBarModule
 
        ],
    exports: [
@@ -35,7 +39,9 @@ const materialModules = [
      MatInputModule,
      MatFormFieldModule,
      MatAutocompleteModule,
-     MatChipsModule
+     MatChipsModule,
+     MatDatepickerModule,
+     MatSnackBarModule
      
 
      

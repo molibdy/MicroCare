@@ -1,13 +1,9 @@
-input{
-    border:none;
-    font-size: 16px;
-    color:#667a92;
-}
+
 
 .text{
     font-size: 25px;
     color: #667a92;
-    text-align: left;
+    text-align: center;
 }
   
 .tarjeta{
@@ -29,10 +25,10 @@ input{
     
 }
 
-.burger{
+/* .burger{
     width: 50px;
     height: 100px;
-}
+} */
 
 .tarjeta-peque{
     width: 360px;
