@@ -1,9 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, NgModule, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BuscadorRecetasPipe } from 'src/app/pipes/buscador-recetas.pipe';
+
+
+
+
+
 
 @Component({
   selector: 'app-buscador-recetas',
   templateUrl: './buscador-recetas.component.html',
-  styleUrls: ['./buscador-recetas.component.css']
+  styleUrls: ['./buscador-recetas.component.css'],
+  // pipes: BuscadorRecetasPipe
 })
 
 
@@ -21,11 +30,16 @@ public listaParaTi : Object[] = [this.receta1, this.receta2,this.receta3]
 public listaNuevas : object[] = [this.receta4, this.receta5, this.receta6]
 
 
+public term:BuscadorRecetasComponent;
+public todas : object[] = [this.receta1, this.receta2,this.receta3,this.receta4, this.receta5, this.receta6]
 
   constructor() {
     this.receta1
     this.receta2
    }
+
+
+
 
   ngOnInit(): void {
   }

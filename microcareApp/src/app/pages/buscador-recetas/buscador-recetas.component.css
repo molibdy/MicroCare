@@ -298,3 +298,12 @@ flex-direction: row;
     align-items: center;
     flex-direction: column;
 }
+
+button{
+    border: none;
+}
+
+.br{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

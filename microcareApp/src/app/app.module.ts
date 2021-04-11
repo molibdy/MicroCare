@@ -44,6 +44,8 @@ import { Intro2Component } from './pages/intro2/intro2.component';
 import { Intro3Component } from './pages/intro3/intro3.component';
 import { Intro4Component } from './pages/intro4/intro4.component';
 import { GramosPipe } from './pipes/gramos.pipe';
+import { BuscadorRecetasPipe } from './pipes/buscador-recetas.pipe';
+import { RecetasComponent } from './pages/buscador/recetas/recetas.component';
 
 
 
@@ -84,6 +86,8 @@ import { GramosPipe } from './pipes/gramos.pipe';
     Intro3Component,
     Intro4Component,
     GramosPipe,
+    BuscadorRecetasPipe,
+    RecetasComponent,
   
   ],
   imports: [

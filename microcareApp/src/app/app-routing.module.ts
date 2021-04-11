@@ -21,6 +21,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { VistaRecetaComponent } from './pages/vista-receta/vista-receta.component';
 
+BarraBuscadorComponent
+
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'dia', component:CalendarioComponent},
@@ -36,7 +38,7 @@ const routes: Routes = [
   {path:'anadir', component:IngestaMenuComponent},
   {path:'calendario', component:CalendarioComponent},
   {path:'home', component:HomeComponent},
-  {path:'receta', component:VistaRecetaComponent},
+  {path:'buscar-receta/receta', component:VistaRecetaComponent},
   {path:'anadir', component:IngestaMenuComponent},
   {path:'seleccionarRecetas',component:BarraBuscadorComponent},
   {path:'menu/configuracion', component:ConfiguracionComponent},
@@ -46,6 +48,8 @@ const routes: Routes = [
   {path:'intro3', component:Intro3Component},
   {path:'intro4', component:Intro4Component},
   {path:'menu/preferencias', component:PreferenciasComponent},
+ 
+
 ];
 
 

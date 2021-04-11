@@ -44,15 +44,11 @@ export class IntroducirManualComponent implements OnInit {
       console.log(ingrediente);
       console.log("pasa");
       this.listaIngredientes.push({ingrediente: ingrediente, peso : peso})
-
-
     }
     else{
       console.log(this.listaIngredientes);
       console.log("hey");
-      
     }
-    
   }
 
   quitarIngrediente(i:number){
