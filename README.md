@@ -34,3 +34,6 @@ Fran 10/04 Creada Pipe Gramos, menu burger terminado, menu preferencias al 90%
 
 
 Moli 11/04 10:00 Componente "vista receta" con botones "añadir al plan" y "¡consumida!"
+
+
+Rodri 11/04 Cambio del buscador de buscar recetas se añaden las primeras tarjetas
