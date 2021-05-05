@@ -35,7 +35,7 @@ export class PreferenciasComponent implements OnInit {
   public isVegano:boolean = false
 
 
-  ///// material autocomplete 
+  ///// material autocomplete
   visible = true;
   selectable = true;
   removable = true;
